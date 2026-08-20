@@ -1,0 +1,1268 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<meta name="robots" content="noindex, nofollow">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="COINSU · Sistema de Gestión de Calidad">
+<meta property="og:locale" content="es_HN">
+<meta property="og:url" content="https://hectorlcastro09.github.io/coinsu-indicadores/">
+<meta property="og:title" content="Indicadores COINSU · Julio 2026">
+<meta property="og:description" content="Cierre de julio: 73% de cumplimiento, 33 de 45 indicadores dentro de presupuesto. 55 indicadores del Sistema de Gestión de Calidad de COINSU.">
+<meta property="og:image" content="https://hectorlcastro09.github.io/coinsu-indicadores/og.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Portada del tablero de indicadores de COINSU de julio 2026">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Indicadores COINSU · Julio 2026">
+<meta name="twitter:description" content="Cierre de julio: 73% de cumplimiento, 33 de 45 indicadores dentro de presupuesto. 55 indicadores del Sistema de Gestión de Calidad de COINSU.">
+<meta name="twitter:image" content="https://hectorlcastro09.github.io/coinsu-indicadores/og.png">
+<title>Indicadores COINSU Julio 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+
+<style>
+/* ============================================================
+   Indicadores COINSU · Julio 2026
+   Dirección de arte: Editorial Índigo
+   Índigo #1B2A5E · Terracota #C0603A · Hueso #F7F4EE · Tinta #12172E
+   ============================================================ */
+
+/* --- Paleta clara (estado base, también el que ve "sistema claro") --- */
+:root{
+  --ground:#F7F4EE;
+  --surface:#FFFFFF;
+  --surface-2:#F1ECE1;
+  --surface-3:#E8E2D4;
+
+  --ink:#171B2E;
+  --ink-2:#4B5269;
+  --ink-3:#63697F;
+
+  --line:#DDD6C6;
+  --line-2:#C6BEAB;
+
+  --indigo:#1B2A5E;
+  --on-indigo:#F4F2EC;
+
+  --accent:#A64F2C;
+  --accent-soft:#F6E6DC;
+
+  --brand-bg:#1B2A5E;
+  --brand-fg:#F4F2EC;
+  --brand-fg-2:#A9B2D6;
+  --brand-rule:#C0603A;
+
+  --ok:#1B6350;
+  --ok-soft:#E2EDE8;
+  --no:#A3202C;
+  --no-soft:#F7E4E4;
+  --susp:#565C6E;
+  --susp-soft:#E9E8EC;
+
+  --c-real:#1B2A5E;
+  --c-area:rgba(27,42,94,.10);
+  --c-bud:#847B8D;
+  --c-proj:#A64F2C;
+  --c-grid:#E2DCCE;
+  --c-axis:#8B8296;
+
+  --shadow:0 1px 2px rgba(23,27,46,.05), 0 8px 24px -18px rgba(23,27,46,.35);
+  --focus:#C0603A;
+}
+
+/* --- Paleta oscura para quien no eligió tema (ajuste del sistema) --- */
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --ground:#12172E;
+    --surface:#191F3B;
+    --surface-2:#212845;
+    --surface-3:#2A3155;
+
+    --ink:#ECEAF3;
+    --ink-2:#AEB5CD;
+    --ink-3:#8D95B2;
+
+    --line:#333B62;
+    --line-2:#4A5382;
+
+    --indigo:#9DAEEC;
+    --on-indigo:#12172E;
+
+    --accent:#E4926A;
+    --accent-soft:#372520;
+
+    --brand-bg:#0C1024;
+    --brand-fg:#EDEBF4;
+    --brand-fg-2:#9AA3C6;
+    --brand-rule:#D9825A;
+
+    --ok:#5BBE9A;
+    --ok-soft:#153328;
+    --no:#F0837A;
+    --no-soft:#3A1D1F;
+    --susp:#98A0B8;
+    --susp-soft:#242B48;
+
+    --c-real:#9DAEEC;
+    --c-area:rgba(157,174,236,.08);
+    --c-bud:#7A8098;
+    --c-proj:#E4926A;
+    --c-grid:#39426B;
+    --c-axis:#767DA0;
+
+    --shadow:0 0 0 1px rgba(157,174,236,.07), 0 12px 28px -22px rgba(0,0,0,.9);
+    --focus:#E4926A;
+  }
+}
+
+/* --- Paleta oscura cuando el lector la elige explícitamente --- */
+:root[data-theme="dark"]{
+  --ground:#12172E;
+  --surface:#191F3B;
+  --surface-2:#212845;
+    --surface-3:#2A3155;
+
+  --ink:#ECEAF3;
+  --ink-2:#AEB5CD;
+  --ink-3:#8D95B2;
+
+  --line:#333B62;
+  --line-2:#4A5382;
+
+  --indigo:#9DAEEC;
+  --on-indigo:#12172E;
+
+  --accent:#E4926A;
+  --accent-soft:#372520;
+
+  --brand-bg:#0C1024;
+  --brand-fg:#EDEBF4;
+  --brand-fg-2:#9AA3C6;
+  --brand-rule:#D9825A;
+
+  --ok:#5BBE9A;
+  --ok-soft:#153328;
+  --no:#F0837A;
+  --no-soft:#3A1D1F;
+  --susp:#98A0B8;
+  --susp-soft:#242B48;
+
+  --c-real:#9DAEEC;
+  --c-area:rgba(157,174,236,.08);
+  --c-bud:#7A8098;
+  --c-proj:#E4926A;
+  --c-grid:#39426B;
+  --c-axis:#767DA0;
+
+  --shadow:0 0 0 1px rgba(157,174,236,.07), 0 12px 28px -22px rgba(0,0,0,.9);
+  --focus:#E4926A;
+}
+
+*,*::before,*::after{box-sizing:border-box}
+
+body{
+  margin:0;
+  background:var(--ground);
+  color:var(--ink);
+  font-family:"IBM Plex Sans","Helvetica Neue",Arial,sans-serif;
+  font-size:16px;
+  line-height:1.62;
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+}
+
+h1,h2,h3,h4{font-family:"Source Serif 4","Iowan Old Style",Georgia,serif;font-weight:600;text-wrap:balance;margin:0}
+p{margin:0}
+a{color:inherit}
+
+:focus-visible{outline:2px solid var(--focus);outline-offset:2px;border-radius:2px}
+
+.wrap{max-width:1200px;margin-inline:auto;padding-inline:clamp(18px,4vw,48px)}
+
+/* etiqueta utilitaria en versalitas */
+.lbl{
+  font-family:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+  font-size:.665rem;font-weight:500;letter-spacing:.13em;text-transform:uppercase;
+  color:var(--ink-3);
+}
+
+/* ============================ CABECERA ============================ */
+.masthead{background:var(--brand-bg);color:var(--brand-fg);border-bottom:3px solid var(--brand-rule)}
+.masthead .wrap{display:flex;align-items:center;gap:18px;padding-block:14px;flex-wrap:wrap}
+.masthead img{width:34px;height:34px;border-radius:50%;background:#fff;padding:2px;flex:none}
+.mh-name{font-weight:600;font-size:.80rem;letter-spacing:.16em;text-transform:uppercase;line-height:1.3}
+.mh-sub{font-family:"IBM Plex Mono",monospace;font-size:.66rem;letter-spacing:.11em;text-transform:uppercase;color:var(--brand-fg-2)}
+.mh-right{margin-left:auto;display:flex;align-items:center;gap:14px}
+.mh-ed{font-family:"IBM Plex Mono",monospace;font-size:.66rem;letter-spacing:.11em;text-transform:uppercase;color:var(--brand-fg-2);text-align:right}
+
+.themebtn{
+  display:inline-flex;align-items:center;gap:7px;
+  background:transparent;color:var(--brand-fg);
+  border:1px solid rgba(255,255,255,.36);border-radius:2px;
+  padding:6px 11px;cursor:pointer;
+  font-family:"IBM Plex Mono",monospace;font-size:.63rem;font-weight:500;
+  letter-spacing:.11em;text-transform:uppercase;
+}
+.themebtn:hover{background:rgba(255,255,255,.09)}
+.themebtn svg{width:13px;height:13px;flex:none}
+
+/* ============================ PORTADA ============================ */
+.hero{padding-block:clamp(38px,6vw,72px) clamp(30px,4vw,48px);border-bottom:1px solid var(--line)}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:clamp(28px,5vw,64px);align-items:start}
+@media (max-width:880px){.hero-grid{grid-template-columns:1fr;gap:34px}}
+
+.kicker{color:var(--accent);font-family:"IBM Plex Mono",monospace;font-size:.68rem;font-weight:600;letter-spacing:.15em;text-transform:uppercase;display:block;margin-bottom:14px}
+.hero h1{font-size:clamp(2.15rem,4.6vw,3.5rem);line-height:1.04;letter-spacing:-.015em}
+.hero .deck{margin-top:18px;font-size:1.02rem;color:var(--ink-2);max-width:56ch}
+.hero .deck b{color:var(--ink);font-weight:600}
+
+
+.byline{display:grid;grid-template-columns:auto minmax(0,1fr);gap:5px 18px;align-items:baseline;margin-top:20px;padding-top:18px;border-top:1px solid var(--line)}
+.byline .v{font-family:"Source Serif 4",Georgia,serif;font-size:.98rem;font-weight:600;color:var(--ink)}
+
+/* bloque de la cifra global */
+.score{background:var(--surface);border:1px solid var(--line);border-top:3px solid var(--indigo);padding:clamp(20px,3vw,30px);box-shadow:var(--shadow)}
+.score-fig{display:flex;align-items:flex-start;gap:16px}
+.score-num{font-family:"Source Serif 4",Georgia,serif;font-weight:600;font-size:clamp(4.2rem,11vw,6.6rem);line-height:.84;letter-spacing:-.03em;color:var(--indigo);font-variant-numeric:tabular-nums}
+.score-pct{font-family:"Source Serif 4",Georgia,serif;font-size:1.9rem;color:var(--indigo);line-height:1;margin-top:.28em}
+.score-cap{margin-top:16px;font-size:.95rem;color:var(--ink-2)}
+.score-cap b{color:var(--ink);font-weight:600}
+
+.bar{display:flex;height:12px;margin-top:22px;border:1px solid var(--line);background:var(--surface-2);overflow:hidden}
+.bar span{display:block}
+.bar .b-ok{background:var(--ok)}
+.bar .b-no{background:var(--no)}
+.bar .b-sp{background:var(--susp)}
+.bar-key{display:flex;flex-wrap:wrap;gap:6px 18px;margin-top:10px}
+.bar-key span{display:inline-flex;align-items:center;gap:6px;font-family:"IBM Plex Mono",monospace;font-size:.66rem;letter-spacing:.06em;color:var(--ink-2);text-transform:uppercase}
+.bar-key i{width:9px;height:9px;display:inline-block;flex:none}
+
+.ledger{display:grid;grid-template-columns:repeat(3,1fr);margin-top:20px;border-top:1px solid var(--line)}
+.ledger div{padding-top:16px;border-right:1px solid var(--line);padding-right:14px}
+.ledger div:last-child{border-right:0;padding-right:0}
+.ledger .lbl{display:block}
+.ledger .n{font-family:"Source Serif 4",Georgia,serif;font-size:1.65rem;font-weight:600;line-height:1.1;font-variant-numeric:tabular-nums;display:block;margin-top:5px}
+.ledger .n.warn{color:var(--no)}
+
+/* ============================ ATENCIÓN ============================ */
+.attention{padding-block:clamp(34px,5vw,54px);border-bottom:1px solid var(--line)}
+.sec-head{display:flex;align-items:baseline;gap:16px;flex-wrap:wrap;margin-bottom:6px}
+.sec-head h2{font-size:clamp(1.5rem,3vw,2.1rem);letter-spacing:-.015em}
+.sec-note{color:var(--ink-2);font-size:.95rem;max-width:68ch;margin-top:8px}
+
+.att-list{margin-top:24px;border-top:1px solid var(--line-2)}
+.att-row{
+  display:grid;grid-template-columns:26px minmax(0,1fr) 8.5rem 12rem;
+  gap:6px 16px;align-items:baseline;width:100%;text-align:left;
+  padding:13px 4px;background:none;border:0;border-bottom:1px solid var(--line);
+  cursor:pointer;color:inherit;font:inherit;
+}
+.att-row:hover{background:var(--surface-2)}
+.att-row .idx{font-family:"IBM Plex Mono",monospace;font-size:.7rem;color:var(--ink-3);font-variant-numeric:tabular-nums}
+.att-row .nm{font-family:"Source Serif 4",Georgia,serif;font-size:1.03rem;font-weight:600;line-height:1.3}
+.att-row .mt{grid-column:2;font-size:.83rem;color:var(--ink-3)}
+.att-row .vl{font-family:"Source Serif 4",Georgia,serif;font-size:1.15rem;font-weight:600;color:var(--no);font-variant-numeric:tabular-nums;white-space:nowrap;text-align:right}
+.att-row .tg{justify-self:end}
+.att-row .tag{width:100%;text-align:center}
+@media (max-width:720px){
+  .att-row{grid-template-columns:26px minmax(0,1fr) auto}
+  .att-row .tg{grid-column:2/4;justify-self:start;margin-top:4px}
+}
+
+.tag{
+  display:inline-block;font-family:"IBM Plex Mono",monospace;font-size:.6rem;font-weight:500;
+  letter-spacing:.1em;text-transform:uppercase;padding:3px 8px;border:1px solid currentColor;
+  white-space:nowrap;
+}
+.tag.corr{color:var(--no);background:var(--no-soft)}
+.tag.anual{color:var(--ok);background:var(--ok-soft)}
+.tag.first{color:var(--ink-2);background:var(--surface-2)}
+
+/* ============================ CONTROLES ============================ */
+.controls{position:sticky;top:0;z-index:20;background:var(--ground);border-bottom:1px solid var(--line-2)}
+.controls .wrap{display:flex;flex-wrap:wrap;gap:12px 20px;align-items:center;padding-block:12px}
+.segs{display:flex;gap:20px;min-width:0}
+.find{display:flex;gap:16px;align-items:center;flex:1 1 260px;min-width:0}
+.seg{display:flex;border:1px solid var(--line-2);background:var(--surface)}
+.seg button{
+  background:none;border:0;border-right:1px solid var(--line);cursor:pointer;color:var(--ink-2);
+  padding:7px 13px;font-family:"IBM Plex Mono",monospace;font-size:.65rem;font-weight:500;
+  letter-spacing:.1em;text-transform:uppercase;
+}
+.seg button:last-child{border-right:0}
+.seg button:hover{color:var(--ink);background:var(--surface-2)}
+.seg button[aria-pressed="true"]{background:var(--indigo);color:var(--on-indigo)}
+
+.search{flex:1 1 200px;min-width:150px;display:flex;align-items:center;gap:8px;border:1px solid var(--line-2);background:var(--surface);padding:0 11px}
+.search svg{width:14px;height:14px;color:var(--ink-3);flex:none}
+.search input{flex:1;border:0;background:none;color:var(--ink);font:inherit;font-size:.88rem;padding:3px 0;min-width:0}
+.search input:focus{outline:none}
+.search input::placeholder{color:var(--ink-3)}
+.count{font-family:"IBM Plex Mono",monospace;font-size:.65rem;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-3);white-space:nowrap}
+
+.legend{display:flex;flex-wrap:wrap;gap:8px 22px;padding-block:11px;border-bottom:1px solid var(--line)}
+.legend-t{border-bottom:0;padding-block:14px 0;margin-top:4px}
+.legend span{display:inline-flex;align-items:center;gap:7px;font-family:"IBM Plex Mono",monospace;font-size:.63rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3)}
+.legend svg{flex:none}
+
+/* ============================ SECCIONES ============================ */
+.opener{display:flex;align-items:flex-start;gap:20px;padding-block:clamp(34px,5vw,52px) 22px}
+.opener .num{font-family:"Source Serif 4",Georgia,serif;font-size:clamp(2.6rem,6vw,3.9rem);font-weight:700;line-height:.82;color:var(--accent);font-variant-numeric:tabular-nums;flex:none}
+.opener h2{font-size:clamp(1.5rem,3vw,2.1rem);letter-spacing:-.015em}
+.opener p{color:var(--ink-2);font-size:.93rem;margin-top:6px;max-width:62ch}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(420px,1fr));gap:22px;padding-bottom:14px}
+@media (max-width:560px){.grid{grid-template-columns:1fr;gap:18px}}
+
+/* ============================ TARJETA ============================ */
+.ind{
+  background:var(--surface);border:1px solid var(--line);border-top:3px solid var(--st);
+  padding:20px 20px 16px;box-shadow:var(--shadow);
+  display:flex;flex-direction:column;min-width:0;scroll-margin-top:120px;
+  --st:var(--ok);
+}
+.ind[data-st="no"]{--st:var(--no)}
+.ind[data-st="sp"]{--st:var(--susp)}
+.ind.flash{animation:flash 1.4s ease-out}
+@keyframes flash{0%{box-shadow:0 0 0 3px var(--accent)}100%{box-shadow:var(--shadow)}}
+@media (prefers-reduced-motion: reduce){.ind.flash{animation:none;outline:2px solid var(--accent);outline-offset:2px}}
+
+.ind-top{display:flex;align-items:flex-start;gap:12px;margin-bottom:12px}
+.ind-num{font-family:"IBM Plex Mono",monospace;font-size:.68rem;color:var(--ink-3);padding-top:5px;font-variant-numeric:tabular-nums;flex:none}
+.ind-name{font-size:1.13rem;line-height:1.28;letter-spacing:-.005em;flex:1;min-width:0;min-height:2.56em}
+.chip{
+  flex:none;font-family:"IBM Plex Mono",monospace;font-size:.6rem;font-weight:600;letter-spacing:.1em;
+  text-transform:uppercase;padding:4px 9px;white-space:nowrap;margin-top:2px;
+  color:var(--st);background:var(--st-soft);border:1px solid var(--st);
+  --st-soft:var(--ok-soft);
+}
+.ind[data-st="no"] .chip{--st-soft:var(--no-soft)}
+.ind[data-st="sp"] .chip{--st-soft:var(--susp-soft)}
+
+.ind-fig{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}
+.ind-val{font-family:"Source Serif 4",Georgia,serif;font-size:2.35rem;font-weight:600;line-height:1;letter-spacing:-.02em;color:var(--st);font-variant-numeric:tabular-nums}
+.ind-delta{font-size:.79rem;color:var(--ink-2);font-variant-numeric:tabular-nums}
+.ind-meta{margin-top:11px;padding-bottom:13px;border-bottom:1px solid var(--line);display:grid;grid-template-columns:auto minmax(0,1fr);gap:3px 12px;align-items:baseline}
+.ind-meta dt{margin:0}
+.ind-meta dd{margin:0;font-size:.84rem;color:var(--ink-2);font-variant-numeric:tabular-nums}
+.ind-meta dd.bud{color:var(--ink);font-weight:500}
+
+.racha{
+  display:flex;gap:9px;align-items:baseline;margin-top:12px;padding:9px 11px;
+  background:var(--no-soft);border-left:3px solid var(--no);
+  font-size:.8rem;color:var(--ink);line-height:1.45;
+}
+.racha.mild{background:var(--surface-3);border-left-color:var(--ink-3)}
+.racha .lbl{color:var(--no);flex:none}
+.racha.mild .lbl{color:var(--ink-2)}
+
+.chart{margin-top:8px;margin-bottom:20px;flex:1 1 auto;display:flex;flex-direction:column;justify-content:center}
+.chart svg{display:block;width:100%;height:auto;overflow:visible}
+.chart .gl{stroke:var(--c-grid);stroke-width:1}
+.chart .ax{stroke:var(--c-axis);stroke-width:1}
+.chart .bud{fill:none;stroke:var(--c-bud);stroke-width:1.5;stroke-dasharray:5 4}
+.chart .area{fill:var(--c-area)}
+.chart .real{fill:none;stroke:var(--c-real);stroke-width:2.2;stroke-linejoin:round;stroke-linecap:round}
+.chart .dot{fill:var(--c-real)}
+.chart .now{stroke:var(--surface);stroke-width:2}
+.chart .projline{fill:none;stroke:var(--c-proj);stroke-width:2.1;stroke-dasharray:2 3}
+.chart .proj{fill:var(--surface);stroke:var(--c-proj);stroke-width:1.8}
+.chart text{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:9.5px;fill:var(--ink-3)}
+.chart text.mo{font-size:9px;letter-spacing:.04em}
+.chart text.mo.hi{fill:var(--ink);font-weight:600}
+.chart text.vl{font-weight:600;fill:currentColor;color:var(--c-real)}
+.chart text.vp{font-weight:600;fill:var(--c-proj)}
+/* halo del color de la tarjeta: la etiqueta nunca queda tachada por una línea */
+.chart .plate{fill:var(--surface)}
+.chart text.vl,.chart text.vp{paint-order:stroke fill;stroke:var(--surface);stroke-width:2.4px;stroke-linejoin:round}
+.chart .susp-band{fill:var(--susp-soft)}
+.chart text.susp{fill:var(--susp);font-size:8px;letter-spacing:.1em}
+
+/* barras de corte trimestral / semestral */
+.chart .cbar{stroke:none}
+.chart .cbar.ok{fill:var(--ok)}
+.chart .cbar.no{fill:var(--no)}
+.chart .cbar-p{fill:none;stroke:var(--c-proj);stroke-width:1.8;stroke-dasharray:2 3}
+.chart .bud-halo{fill:none;stroke:var(--surface);stroke-width:3.5}
+.chart text.pend{fill:var(--ink-3);font-size:9px;letter-spacing:.08em}
+
+/* patrón mes a mes de la sección de acciones correctivas */
+.pat{display:grid;grid-template-columns:repeat(7,1fr);gap:3px;margin-top:10px}
+.pat span{
+  text-align:center;padding:5px 0;border:1px dashed var(--susp);
+  background:transparent;color:var(--ink-3);
+  font-family:"IBM Plex Mono",monospace;font-size:.58rem;letter-spacing:.04em;
+}
+.pat span.si{border:1px solid var(--line-2);color:var(--ok)}
+.pat span.no{background:var(--no-soft);border:1px solid var(--no);color:var(--no)}
+.pat span.tramo{font-weight:600;box-shadow:inset 0 -4px 0 var(--no)}
+
+/* franja de meses para series constantes */
+.strip{display:grid;grid-template-columns:repeat(8,minmax(0,1fr));gap:4px}
+@media (max-width:560px){.strip{grid-template-columns:repeat(4,minmax(0,1fr))}}
+.strip div{text-align:center;padding:19px 2px;border:1px solid var(--line);background:var(--surface-2)}
+.strip .m{display:block;font-family:"IBM Plex Mono",monospace;font-size:.6rem;letter-spacing:.06em;color:var(--ink-3)}
+.strip .v{display:block;font-family:"IBM Plex Mono",monospace;font-size:.78rem;font-weight:600;margin-top:3px;font-variant-numeric:tabular-nums;color:var(--ok)}
+.strip .cell-no .v{color:var(--no)}
+.strip .cell-now{background:var(--surface);border-color:var(--line-2)}
+.strip .cell-now .m{color:var(--ink);font-weight:600}
+.strip .cell-proj{background:var(--accent-soft);border-color:var(--accent)}
+.strip .cell-proj .m{color:var(--accent)}
+.strip .cell-proj .v{color:var(--accent)}
+
+/* análisis desplegable */
+.reads{margin-top:auto;padding-top:14px;border-top:1px solid var(--line)}
+details{border-bottom:1px solid var(--line)}
+details:last-child{border-bottom:0}
+summary{
+  cursor:pointer;list-style:none;padding:11px 0;display:flex;align-items:center;gap:9px;
+  font-family:"IBM Plex Mono",monospace;font-size:.65rem;font-weight:500;letter-spacing:.11em;
+  text-transform:uppercase;color:var(--ink-2);
+}
+summary::-webkit-details-marker{display:none}
+summary:hover{color:var(--ink)}
+summary .caret{width:9px;height:9px;flex:none;transition:transform .18s ease;color:var(--accent)}
+@media (prefers-reduced-motion: reduce){summary .caret{transition:none}}
+details[open] summary .caret{transform:rotate(90deg)}
+details .body{padding:0 0 14px;font-size:.875rem;line-height:1.62;color:var(--ink-2);max-width:62ch}
+details .body b{color:var(--ink);font-weight:600}
+
+.empty{padding:60px 0;text-align:center;color:var(--ink-3);font-size:.95rem}
+
+/* ============================ COLOFÓN ============================ */
+.colophon{background:var(--surface-2);border-top:3px solid var(--brand-rule);margin-top:44px;padding-block:clamp(36px,5vw,56px)}
+.colophon h2{font-size:1.5rem;margin-bottom:6px}
+.colophon .sec-note{margin-bottom:22px}
+.corr-list{margin-top:24px;border-top:1px solid var(--line-2)}
+.corr-row{
+  display:grid;grid-template-columns:26px minmax(0,1fr) 15rem 8.5rem;
+  gap:4px 16px;align-items:baseline;width:100%;text-align:left;
+  padding:15px 4px;background:none;border:0;border-bottom:1px solid var(--line);
+  cursor:pointer;color:inherit;font:inherit;
+}
+.corr-row:hover{background:var(--surface)}
+.corr-row .idx{font-family:"IBM Plex Mono",monospace;font-size:.7rem;color:var(--ink-3);font-variant-numeric:tabular-nums}
+.corr-row .nm{font-family:"Source Serif 4",Georgia,serif;font-size:1.03rem;font-weight:600;line-height:1.3}
+.corr-row .run{display:flex;flex-direction:column;gap:2px;font-family:"IBM Plex Mono",monospace;font-size:.66rem;letter-spacing:.06em;text-transform:uppercase;color:var(--no)}
+.corr-row .run span{white-space:nowrap}
+.corr-row .vl{font-family:"Source Serif 4",Georgia,serif;font-size:1.1rem;font-weight:600;font-variant-numeric:tabular-nums;text-align:right;white-space:nowrap}
+.corr-row .vl.si{color:var(--ok)}
+.corr-row .vl.no{color:var(--no)}
+.corr-row .pat{grid-column:2/5}
+.corr-row .txt{grid-column:2/5;display:block;font-size:.85rem;color:var(--ink-2);line-height:1.55;margin-top:8px;max-width:74ch}
+@media (max-width:760px){
+  .corr-row{grid-template-columns:22px minmax(0,1fr) auto;gap:4px 12px}
+  .corr-row .run{grid-column:2;margin-top:3px}
+  .corr-row .pat,.corr-row .txt{grid-column:2/4}
+}
+
+.foot{border-top:1px solid var(--line-2);margin-top:34px;padding-top:18px;display:flex;flex-wrap:wrap;gap:10px 26px;align-items:baseline}
+.foot .lbl{color:var(--ink-3)}
+.foot .sp{margin-left:auto}
+
+/* ============================ TELÉFONO ============================
+   El SVG se dibuja sobre un viewBox de 560 unidades; al reducirse la tarjeta
+   el texto encoge con él, así que en pantallas angostas hay que agrandarlo
+   dentro del propio viewBox para que siga leyéndose. */
+@media (max-width:640px){
+  .chart text{font-size:13.5px}
+  .chart text.mo{font-size:13.5px}
+  .chart text.susp{font-size:10px}
+  .chart .cbar-p{stroke-width:3;stroke-dasharray:6 4}
+  .chart text.pend{font-size:13.5px}
+
+  /* barra de filtros compacta: en teléfono se llevaba un quinto de la pantalla.
+     Los dos grupos comparten una sola fila que se desplaza dentro de sí misma. */
+  .controls .wrap{gap:8px;padding-block:9px}
+  .seg button{padding:8px 7px;font-size:.6rem;letter-spacing:.06em}
+  .segs{width:100%;gap:8px;overflow-x:auto;scrollbar-width:none;padding-bottom:1px;
+        -webkit-mask-image:linear-gradient(to right,#000 calc(100% - 18px),transparent);
+        mask-image:linear-gradient(to right,#000 calc(100% - 18px),transparent)}
+  .segs::-webkit-scrollbar{display:none}
+  .seg{flex:none}
+  .find{width:100%;flex-basis:auto}
+}
+@media (max-width:560px){
+  .mh-right{margin-left:0;width:100%;justify-content:space-between}
+  .themebtn{padding:9px 12px}
+  .ind{padding:16px 15px 14px}
+  .ind-name{min-height:0}
+  .foot .sp{margin-left:0}
+  .wrap{padding-inline:14px}
+}
+@media (max-width:430px){
+  /* con la tarjeta tan angosta no caben los ocho meses legibles */
+  .chart text.mo.m1,.chart text.mo.m3,.chart text.mo.m5{display:none}
+}
+
+@media print{
+  /* espejo del bloque :root claro — actualizar junto con él */
+  :root,:root:not([data-theme="light"]),:root[data-theme="dark"]{
+  --ground:#F7F4EE;
+  --surface:#FFFFFF;
+  --surface-2:#F1ECE1;
+  --surface-3:#E8E2D4;
+
+  --ink:#171B2E;
+  --ink-2:#4B5269;
+  --ink-3:#63697F;
+
+  --line:#DDD6C6;
+  --line-2:#C6BEAB;
+
+  --indigo:#1B2A5E;
+  --on-indigo:#F4F2EC;
+
+  --accent:#A64F2C;
+  --accent-soft:#F6E6DC;
+
+  --brand-bg:#1B2A5E;
+  --brand-fg:#F4F2EC;
+  --brand-fg-2:#A9B2D6;
+  --brand-rule:#C0603A;
+
+  --ok:#1B6350;
+  --ok-soft:#E2EDE8;
+  --no:#A3202C;
+  --no-soft:#F7E4E4;
+  --susp:#565C6E;
+  --susp-soft:#E9E8EC;
+
+  --c-real:#1B2A5E;
+  --c-area:rgba(27,42,94,.10);
+  --c-bud:#847B8D;
+  --c-proj:#A64F2C;
+  --c-grid:#E2DCCE;
+  --c-axis:#8B8296;
+
+  --shadow:0 1px 2px rgba(23,27,46,.05), 0 8px 24px -18px rgba(23,27,46,.35);
+  --focus:#C0603A;
+  }
+  .controls,.themebtn{display:none}
+  .ind{break-inside:avoid;box-shadow:none}
+  body{background:#fff}
+}
+</style>
+</head>
+<body>
+
+
+<header class="masthead">
+  <div class="wrap">
+    <img src="data:image/png;base64,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" alt="COINSU">
+    <div>
+      <div class="mh-name">COINSU</div>
+      <div class="mh-sub">Sistema de Gestión de Calidad</div>
+    </div>
+    <div class="mh-right">
+      <div class="mh-ed">Edición 07<br>Julio 2026</div>
+      <button class="themebtn" id="theme" type="button" aria-live="polite">
+        <svg id="theme-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" aria-hidden="true"></svg>
+        <span id="theme-txt">Sistema</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="kicker">Cierre mensual · Julio 2026</span>
+      <h1>Treinta y&nbsp;tres de cuarenta y&nbsp;cinco indicadores dentro de presupuesto</h1>
+      <p class="deck">Julio cierra con <b>73% de cumplimiento, siete puntos por debajo del 80% con que cerró junio</b>. La cartera de riesgos está concentrada: <b>doce indicadores ameritan acción correctiva</b> — diez encadenaron dos o más meses consecutivos fuera de presupuesto en lo que va del año, siete de ellos con la racha todavía abierta en julio, y dos son de corte trimestral o semestral que no alcanzaron su meta. Lo más notable del mes es el ciclo de conversión de efectivo, que baja a 82 días y cumple por primera vez desde septiembre de 2025, y el retroceso en seguridad laboral, con dos accidentes que disparan el índice de gravedad.</p>
+    </div>
+    <div class="score">
+      <div class="score-fig">
+        <span class="score-num">73</span><span class="score-pct">%</span>
+      </div>
+      <p class="score-cap"><b>33 de 45</b> indicadores evaluados cumplieron su presupuesto del mes. El Análisis de Potencial de Aceite queda fuera del semáforo por instrucción de Presidencia.</p>
+      <div class="bar" role="img" aria-label="33 dentro de presupuesto, 12 fuera de presupuesto, 1 suspendido">
+        <span class="b-ok" style="flex:33"></span><span class="b-no" style="flex:12"></span><span class="b-sp" style="flex:1"></span>
+      </div>
+      <div class="bar-key">
+        <span><i style="background:var(--ok)"></i>33 cumplen</span>
+        <span><i style="background:var(--no)"></i>12 fuera de presupuesto</span>
+        <span><i style="background:var(--susp)"></i>1 suspendido</span>
+      </div>
+      <div class="byline">
+        <span class="lbl">Alcance</span><span class="v">46 indicadores mensuales</span>
+        <span class="lbl">Evaluados</span><span class="v">45 · uno suspendido</span>
+        <span class="lbl">Corte</span><span class="v">31 de julio de 2026</span>
+        <span class="lbl">Trim. y sem.</span><span class="v">9 indicadores · 7 dentro de meta</span>
+      </div>
+      <div class="ledger">
+        <div><span class="lbl">Estratégicos</span><span class="n">22<span style="color:var(--ink-3);font-size:1rem"> / 30</span></span></div>
+        <div><span class="lbl">Desempeño</span><span class="n">11<span style="color:var(--ink-3);font-size:1rem"> / 15</span></span></div>
+        <div><span class="lbl">Acción correctiva</span><span class="n warn">12<span style="color:var(--ink-3);font-size:1rem"> / 55</span></span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="attention">
+  <div class="wrap">
+    <div class="sec-head"><h2>Lo que exige atención</h2></div>
+    <p class="sec-note">Los doce indicadores fuera del presupuesto de julio, ordenados por antigüedad del incumplimiento. Toque cualquiera para ir a su ficha.</p>
+    <div class="att-list" id="att"></div>
+  </div>
+</section>
+
+<div class="controls">
+  <div class="wrap">
+    <div class="segs">
+    <div class="seg" role="group" aria-label="Filtrar por sección">
+      <button type="button" data-sec="all" aria-pressed="true">Todos</button>
+      <button type="button" data-sec="E" aria-pressed="false">Estratégicos</button>
+      <button type="button" data-sec="D" aria-pressed="false">Desempeño</button>
+      <button type="button" data-sec="T" aria-pressed="false">Trim. y sem.</button>
+    </div>
+    <div class="seg" role="group" aria-label="Filtrar por estado">
+      <button type="button" data-st="all" aria-pressed="true">Todos</button>
+      <button type="button" data-st="ok" aria-pressed="false">Cumple</button>
+      <button type="button" data-st="no" aria-pressed="false">Fuera</button>
+      <button type="button" data-st="corr" aria-pressed="false">Correctiva</button>
+    </div>
+    </div>
+    <div class="find">
+    <label class="search">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input type="search" id="q" placeholder="Buscar indicador…" aria-label="Buscar indicador">
+    </label>
+    <span class="count" id="count"></span>
+    </div>
+  </div>
+</div>
+
+<div class="wrap">
+  <div class="legend">
+    <span><svg width="24" height="8" aria-hidden="true"><line x1="0" y1="4" x2="24" y2="4" stroke="var(--c-real)" stroke-width="2.2"/><circle cx="20" cy="4" r="3" fill="var(--c-real)"/></svg>Resultado real</span>
+    <span><svg width="24" height="8" aria-hidden="true"><line x1="0" y1="4" x2="24" y2="4" stroke="var(--c-bud)" stroke-width="1.5" stroke-dasharray="5 4"/></svg>Presupuesto</span>
+    <span><svg width="24" height="10" aria-hidden="true"><line x1="0" y1="5" x2="14" y2="5" stroke="var(--c-proj)" stroke-width="1.6" stroke-dasharray="2 3"/><rect x="15" y="1.5" width="7" height="7" transform="rotate(45 18.5 5)" fill="var(--ground)" stroke="var(--c-proj)" stroke-width="1.8"/></svg>Proyección de agosto</span>
+  </div>
+</div>
+
+<section class="wrap" id="sec-E">
+  <div class="opener">
+    <span class="num">01</span>
+    <div>
+      <h2>Indicadores Estratégicos</h2>
+      <p>Treinta indicadores del libro O-GR-02, de la salud financiera al desempeño de planta y la calidad del producto despachado.</p>
+    </div>
+  </div>
+  <div class="grid" id="grid-E"></div>
+</section>
+
+<section class="wrap" id="sec-D">
+  <div class="opener">
+    <span class="num">02</span>
+    <div>
+      <h2>Indicadores de Desempeño</h2>
+      <p>Dieciséis indicadores de los objetivos de calidad (O-GR-05). Quince entran al semáforo: el Análisis de Potencial de Aceite está suspendido y no computa.</p>
+    </div>
+  </div>
+  <div class="grid" id="grid-D"></div>
+</section>
+
+<section class="wrap" id="sec-T">
+  <div class="opener">
+    <span class="num">03</span>
+    <div>
+      <h2>Corte Trimestral y Semestral</h2>
+      <p>Nueve indicadores que no se evalúan mes a mes. Se presentan con su último corte disponible, indicando a qué período pertenece: en julio solo se actualizó el mantenimiento preventivo de equipos informáticos. Siete de los nueve están dentro de meta; clima laboral y retención de clientes, no. No entran en el porcentaje del mes.</p>
+      <div class="legend legend-t">
+        <span><svg width="22" height="10" aria-hidden="true"><rect x="0" y="1" width="20" height="8" fill="var(--ok)"/></svg>Corte realizado</span>
+        <span><svg width="22" height="10" aria-hidden="true"><rect x="0.9" y="1.9" width="18.2" height="6.2" fill="none" stroke="var(--c-proj)" stroke-width="1.8" stroke-dasharray="2 3"/></svg>Próximo corte esperado</span>
+        <span><svg width="24" height="8" aria-hidden="true"><line x1="0" y1="4" x2="24" y2="4" stroke="var(--c-bud)" stroke-width="1.5" stroke-dasharray="5 4"/></svg>Meta</span>
+      </div>
+    </div>
+  </div>
+  <div class="grid" id="grid-T"></div>
+</section>
+
+<p class="empty" id="empty" hidden>Ningún indicador coincide con el filtro.</p>
+</main>
+
+<footer class="colophon">
+  <div class="wrap">
+    <h2>Indicadores con acción correctiva</h2>
+    <p class="sec-note">Ameritan acción correctiva los indicadores que acumularon <b>dos o más meses consecutivos fuera de presupuesto</b> entre enero y julio, y los de corte trimestral o semestral que <b>no alcanzaron su meta</b>. Toque cualquiera para ir a su ficha.</p>
+    <div class="corr-list" id="corr"></div>
+    <div class="foot">
+      <span class="lbl">COINSU · Sistema de Gestión de Calidad</span>
+      <span class="lbl">Fuente: O-GR-02 · O-GR-05 · fichas F-GR-05 de julio 2026</span>
+      <span class="lbl sp">Publicado el 19 de agosto de 2026</span>
+    </div>
+  </div>
+</footer>
+
+<script id="data" type="application/json">{"E":[{"key":"cce","sec":"E","n":1,"name":"Reducción del Ciclo de Conversión de Efectivo (CCE)","unit":"días","meta":"≤ 88.33 días (promedio anual)","meta_v":88.33,"dir":"le","status":"ok","suspendido":false,"racha":null,"meets_annual":false,"budget":[35.0,45.0,55.0,65.0,80.0,90.0],"real":[532.9507394713953,682.0881224201321,290.3600212867502,296.79405652794696,280.233868536539,131.949172659831],"budget_jul":120.0,"budget_ago":150.0,"jul_real":82.01035722391428,"esperado":65.0,"esp_txt":"65 días","why":"Primer cumplimiento desde septiembre de 2025, tras nueve meses seguidos fuera: 82.0 días contra un presupuesto de 120 y una mejora de 49.9 días frente a junio. El inventario aporta 109.8 días de esa mejora —el producto terminado quedó prácticamente en cero al despachar 3,035 TM de CPO contra 2,401 producidas, con HONDUPALMA y CAICESA— y el mayor plazo con proveedores extranjeros suma otros 25.4 días. En sentido contrario, el período de cobro se alargó 85.2 días: las cuentas por cobrar cierran en L. 66.3 millones, el saldo más alto del año.","trend":"La ficha proyecta 65 días para agosto: el inventario de producto terminado se mantendrá bajo y las cuentas por cobrar promedio disminuirán porque se cobrará todo lo pendiente del contrato de junio con CAICESA. No se renovará el contrato con CAICESA por no disponer de volumen suficiente de producción e inventario; CAICESA tiene términos de pago menos favorables que HONDUPALMA.","jul_real_f":"82.0 días","jul_budget_f":"120.0 días","delta_txt":"-31.7%","fmt_kind":"raw","fmt_dec":1,"fmt_suf":" días","pref":"","correctiva":true,"pattern":[false,false,false,false,false,false,true],"runs":[[0,5]],"run_max":6},{"key":"cobro","sec":"E","n":2,"name":"Eficiencia en el Cobro a Clientes","unit":"veces","meta":"≥ 2.75 veces por año","meta_v":2.75,"dir":"ge","status":"no","suspendido":false,"racha":null,"meets_annual":false,"budget":[1.0,2.0,2.0,2.0,4.0,5.0],"real":[6.300892573605537,4.360723673293358,4.88509174030983,4.9842216929613645,14.464530465411531,7.434789071348165],"budget_jul":5.0,"budget_ago":4.0,"jul_real":2.7172837747925973,"esperado":4.0,"esp_txt":"4.00 veces","why":"Cae a 2.72 veces contra un presupuesto de 5.00 — el registro más bajo del año y por debajo incluso de la meta anual de 2.75. Las cuentas por cobrar promedio crecieron 158% hasta L. 41.6 millones con los despachos de fin de mes a CAICESA, cliente con términos de pago menos favorables. La facturación cedió 5.69%, y la caída es íntegramente de exportación (−78.6%): las ventas locales alcanzaron su máximo del año.","trend":"Se estima 4.00 para agosto: las ventas se mantendrán similares porque los precios del aceite —especialmente el de palmiste (PKO)— mejoraron respecto al mes anterior, y las cuentas por cobrar disminuirán levemente por el menor volumen de venta a CAICESA.","jul_real_f":"2.72 veces","jul_budget_f":"5.00 veces","delta_txt":"-45.7%","fmt_kind":"raw","fmt_dec":2,"fmt_suf":" veces","pref":"","correctiva":false,"pattern":[true,true,true,true,true,true,false],"runs":[],"run_max":0},{"key":"eeff","sec":"E","n":3,"name":"Entrega en Tiempo y Forma de los Estados Financieros (EEFF)","unit":"días","meta":"≤ 5 días hábiles de cada mes","meta_v":5,"dir":"le","status":"ok","suspendido":false,"racha":null,"meets_annual":false,"budget":[5.0,5.0,5.0,5.0,5.0,5.0],"real":[11.0,4.0,4.0,4.0,3.0,3.0],"budget_jul":5.0,"budget_ago":5.0,"jul_real":5.0,"esperado":4.0,"esp_txt":"4 días hábiles","why":"Cumple, pero justo en el límite: los estados financieros de julio se entregaron en 5 días hábiles frente a los 3 de junio. El cierre se alargó dos días por la revisión adicional de información de costos de la temporada alta.","trend":"Contabilidad proyecta 4 días hábiles para agosto, dejando un día de holgura sobre la meta para la revisión de información.","jul_real_f":"5 días","jul_budget_f":"5 días","delta_txt":"+0","fmt_kind":"raw","fmt_dec":0,"fmt_suf":" días","pref":"","correctiva":false,"pattern":[false,true,true,true,true,true,true],"runs":[],"run_max":0},{"key":"roe","sec":"E","n":4,"name":"Retorno sobre el Patrimonio (ROE)","unit":"%","meta":"≥ 1.00% de retorno sobre el patrimonio","meta_v":1.0,"dir":"ge","status":"ok","suspendido":false,"racha":null,"meets_annual":false,"budget":[-4.0,-4.0,-3.0,-2.0,-1.0,2.0],"real":[6.3887803693254845,6.44145235277859,4.5356137329485495,9.691986984143796,5.8709897905860835,9.054662800172313],"budget_jul":5.0,"budget_ago":7.000000000000001,"jul_real":9.314869080792631,"esperado":6.5,"esp_txt":"6.50%","why":"Segundo mejor registro del año, solo por detrás del 9.69% de abril (9.31% contra 5.00% presupuestado y 9.05% en junio): la utilidad del mes fue de L. 24.8 millones, la más alta de 2026, y llevó el patrimonio a L. 266.3 millones. El retorno queda muy por encima del exigido.","trend":"Se estima 6.50% para agosto: las utilidades disminuirán por el mayor costo de la fruta y el patrimonio aumentará conforme a esas utilidades.","jul_real_f":"9.31%","jul_budget_f":"5.00%","delta_txt":"+4.31 pts","fmt_kind":"pct100","fmt_dec":2,"fmt_suf":"%","pref":"","correctiva":false,"pattern":[true,true,true,true,true,true,true],"runs":[],"run_max":0},{"key":"obligaciones","sec":"E","n":5,"name":"Cumplimiento con las Obligaciones a Corto Plazo","unit":"veces","meta":"≥ 3.58 veces el activo sobre el pasivo","meta_v":3.58,"dir":"ge","status":"ok","suspendido":false,"racha":null,"meets_annual":false,"budget":[3.0,3.0,3.0,3.0,4.0,4.0],"real":[4.181594874632999,4.882201064172237,4.7566699351603345,6.769496660565744,6.595842636325358,7.222084346382374],"budget_jul":4.0,"budget_ago":4.0,"jul_real":7.070403004691167,"esperado":6.5,"esp_txt":"6.50 veces","why":"Cumple con holgura (7.07 contra 4.00 presupuestado). El activo corriente creció 11.4% hasta L. 246.0 millones, pero el pasivo corriente creció más rápido (13.8%, hasta L. 34.8 millones, por el aumento de proveedores extranjeros): de ahí el leve descenso frente al 7.22 de junio. La cobertura sigue siendo muy amplia.","trend":"La ficha proyecta 6.50 para agosto: los activos corrientes seguirán aumentando pero en menor medida que el mes anterior, mientras los pasivos corrientes se mantendrán similares.","jul_real_f":"7.07 veces","jul_budget_f":"4.00 veces","delta_txt":"+76.8%","fmt_kind":"raw","fmt_dec":2,"fmt_suf":" veces","pref":"","correctiva":false,"pattern":[true,true,true,true,true,true,true],"runs":[],"run_max":0},{"key":"costo_deuda","sec":"E","n":6,"name":"Minimización del Costo de Deuda Financiera","unit":"%","meta":"≤ 0.50% del valor de la deuda financiera","meta_v":0.5,"dir":"le","status":"no","suspendido":false,"racha":null,"meets_annual":false,"budget":[0.5,0.5,0.5,0.5,0.5,0.5],"real":[0.4166568205916623,0.38888888815015643,0.44444444413079276,0.4166666679976231,0.416666664283326,0.49722222212668227],"budget_jul":0.5,"budget_ago":0.5,"jul_real":0.5030754012116702,"esperado":0.508,"esp_txt":"0.508%","why":"Se pasa por tres milésimas: 0.503% contra el tope de 0.500%. El Banco de Occidente subió la tasa anual a 6%: el escalón real ocurrió en junio, cuando los intereses saltaron 19.3% con el saldo de deuda sin variación. Julio solo lo consolida, con L. 1.35 millones de interés sobre un saldo promedio de L. 267.6 millones, tras un primer cuatrimestre entre 0.39% y 0.44%.","trend":"Se prevé 0.508% para agosto. COINSU está en negociación con el Banco de Occidente para bajar la tasa; de no lograrse, el resultado seguirá subiendo levemente con el tiempo.","jul_real_f":"0.503%","jul_budget_f":"0.500%","delta_txt":"+0.003 pts","fmt_kind":"pct100","fmt_dec":3,"fmt_suf":"%","pref":"","correctiva":false,"pattern":[true,true,true,true,true,true,false],"runs":[],"run_max":0},{"key":"estructura","sec":"E","n":7,"name":"Minimizar Estructura de Deuda","unit":"veces","meta":"< 1.50 veces el valor del patrimonio neto","meta_v":1.5,"dir":"le","status":"ok","suspendido":false,"racha":null,"meets_annual":false,"budget":[1.5,1.5,1.5,1.5,1.5,1.5],"real":[1.614882619329808,1.5109468223226092,1.4423392124336618,1.3025478836973892,1.2260754304280204,1.115058434527002],"budget_jul":1.5,"budget_ago":1.5,"jul_real":0.9988289436749892,"esperado":0.9,"esp_txt":"0.90 veces","why":"Baja de 1.12 a 1.00 veces y cumple con margen frente al tope de 1.50: el patrimonio crece con la utilidad del mes mientras la deuda financiera se reduce por primera vez en el año con un abono a capital de L. 3.3 millones. Es el mejor nivel del año, con seis descensos consecutivos desde el 1.61 de enero.","trend":"Se prevé 0.90 para agosto, considerando que ya se comenzó a abonar a capital, que habrá utilidad en el mes y que el patrimonio quedará un poco mayor que el del mes anterior.","jul_real_f":"1.00 veces","jul_budget_f":"1.50 veces","delta_txt":"-33.4%","fmt_kind":"raw","fmt_dec":2,"fmt_suf":" veces","pref":"","correctiva":true,"pattern":[false,false,true,true,true,true,true],"runs":[[0,1]],"run_max":2},{"key":"dscr","sec":"E","n":8,"name":"Optimizar Pago de Servicio de Deuda (DSCR)","unit":"veces","meta":"≥ 4.08 veces el servicio de la deuda","meta_v":4.08,"dir":"ge","status":"no","suspendido":false,"racha":null,"meets_annual":true,"budget":[2.0,3.0,3.0,4.0,5.0,6.0],"real":[11.390276393003612,12.95027294608207,8.940635753800857,19.72751213393857,13.414628532054813,18.11073454854396],"budget_jul":6.0,"budget_ago":6.0,"jul_real":5.862657537111024,"esperado":5.5,"esp_txt":"5.50 veces","why":"Queda en 5.86 contra un presupuesto de 6.00 —a 0.14 de cumplirlo— tras caer desde 18.11 en junio. La caída no viene de la generación: el EBITDA subió 12.2% hasta L. 27.2 millones, el máximo del año. Está en el denominador, porque la cuota al Banco de Occidente se multiplicó por 3.5 al incorporar el abono a capital. Aun así supera con holgura la meta anual de 4.08.","trend":"Se prevé 5.50 para agosto porque la cuota hacia Banco de Occidente aumentó por el pago de capital y la utilidad operativa será un poco menor que la del mes anterior debido al alto costo de la fruta.","jul_real_f":"5.86 veces","jul_budget_f":"6.00 veces","delta_txt":"-2.3%","fmt_kind":"raw","fmt_dec":2,"fmt_suf":" veces","pref":"","correctiva":false,"pattern":[true,true,true,true,true,true,false],"runs":[],"run_max":0},{"key":"pagos_legales","sec":"E","n":9,"name":"Índice de Cumplimiento de Pagos Legales y Aplicables","unit":"#","meta":"0 pagos legales en incumplimiento","meta_v":0,"dir":"le","status":"ok","suspendido":false,"racha":null,"meets_annual":false,"budget":[0.0,0.0,0.0,0.0,0.0,0.0],"real":[0.0,0.0,0.0,0.0,0.0,0.0],"budget_jul":0.0,"budget_ago":0.0,"jul_real":0.0,"esperado":0.0,"esp_txt":"0 pagos","why":"Séptimo mes consecutivo sin ningún pago legal en incumplimiento. COINSU se mantiene al día con todas las obligaciones fiscales, municipales y laborales aplicables.","trend":"El resultado será 0: se está en cumplimiento con todas las obligaciones correspondientes; queda pendiente únicamente la licencia ambiental, que se encuentra en trámite.","jul_real_f":"0","jul_budget_f":"0","delta_txt":"+0","fmt_kind":"raw","fmt_dec":0,"fmt_suf":"","pref":"","correctiva":false,"pattern":[true,true,true,true,true,true,true],"runs":[],"run_max":0},{"key":"roa","sec":"E","n":10,"name":"Optimización del Uso de Activos (ROA)","unit":"%","meta":"≥ 7.67% sobre el total de activos","meta_v":7.67,"dir":"ge","status":"ok","suspendido":false,"racha":null,"meets_annual":false,"budget":[3.0,4.0,5.0,6.0,7.000000000000001,9.0],"real":[11.172322498616671,10.981837661851367,17.294761815326332,14.599539276157481,14.503726785431592,22.586534968580025],"budget_jul":13.0,"budget_ago":15.0,"jul_real":20.376139475577055,"esperado":17.0,"esp_txt":"17.00%","why":"Cumple ampliamente (20.38% contra 13.00% presupuestado), segundo mejor registro del año tras el 22.59% de junio. El indicador relaciona las ventas del mes con el activo promedio: cede porque la facturación bajó 5.69% —por el desplome de las exportaciones— mientras el activo promedio creció 4.5% con el salto de las cuentas por cobrar a L. 66.3 millones. El inventario, en cambio, se redujo 45.7%.","trend":"Se espera 17.00% para agosto: la facturación disminuirá por el menor volumen de venta al no haber contrato con CAICESA, aunque la facturación de PKO compensará la mayor parte de esa caída; los activos aumentarán por la utilidad del mes.","jul_real_f":"20.38%","jul_budget_f":"13.00%","delta_txt":"+7.38 pts","fmt_kind":"pct100","fmt_dec":2,"fmt_suf":"%","pref":"","correctiva":false,"pattern":[true,true,true,true,true,true,true],"runs":[],"run_max":0},{"key":"costo_tm_fruta","sec":"E","n":11,"name":"Costo de Proceso por Tonelada de Fruta Fresca Procesada","unit":"L/TM","meta":"≤ L. 987.50 por TM de fruta fresca procesada","meta_v":987.5,"dir":"le","status":"ok","suspendido":false,"racha":null,"meets_annual":false,"budget":[1400.0,1300.0,1300.0,1150.0,1000.0,800.0],"real":[501.46,930.83,753.48,687.37,649.57,740.35],"budget_jul":700.0,"budget_ago":600.0,"jul_real":588.82,"esperado":650.0,"esp_txt":"L. 650.00","why":"El costo más bajo desde enero y el segundo del año, tras los L. 501.46 de enero: L. 588.82 por tonelada contra un presupuesto de L. 700 y L. 740.35 en junio. No es solo dilución por volumen: con 16.3% más fruta procesada, el gasto nominal de proceso bajó 7.5% y el de mantenimiento 11.3%. La caída es de L. 151.53 por tonelada en un solo mes.","trend":"Se espera L. 650.00 por tonelada de fruta fresca procesada en agosto, debido a que se procesará un volumen algo menor que el del mes anterior con costos variables, fijos y de mantenimiento similares.","jul_real_f":"588.82","jul_budget_f":"700.00","delta_txt":"-15.9%","fmt_kind":"raw","fmt_dec":2,"fmt_suf":"","pref":"L. ","correctiva":false,"pattern":[true,true,true,true,true,true,true],"runs":[],"run_max":0},{"key":"costo_fruta_pct","sec":"E","n":12,"name":"Costo de Fruta sobre Precio de Venta de CPO","unit":"%","meta":"≤ 15.83% del precio de venta promedio mensual","meta_v":15.83,"dir":"le","status":"no","suspendido":false,"racha":"Tercer mes consecutivo fuera de presupuesto · acción correctiva abierta","meets_annual":false,"budget":[16.5,16.0,16.0,16.0,16.0,16.0],"real":[14.59,15.07,14.62,15.0,16.61,16.1],"budget_jul":15.0,"budget_ago":14.499999999999998,"jul_real":16.17,"esperado":16.2,"esp_txt":"16.20%","why":"Tercer mes consecutivo en no conformidad, con acción correctiva abierta: 16.17% contra un presupuesto de 15.00%, y también por encima de la meta anual de 15.83%. El precio de compra de la fruta subió 1.6% hasta L. 5,002.00 por tonelada (junio: L. 4,925.16), con una sobre-ejecución de L. 11.6 millones sobre el plan de compra del mes. La competencia por la fruta sigue presionando el precio.","trend":"Se espera 16.20% para agosto porque la competencia es mayor con la reactivación de la planta de Grupo Jaremar, que además está recuperando los acopios de los sectores que más compiten por la fruta con COINSU. HONDUPALMA y DINANT también están más agresivos comprando fruta para cumplir sus contratos y llevan la iniciativa en el aumento de precios.","jul_real_f":"16.17%","jul_budget_f":"15.00%","delta_txt":"+1.17 pts","fmt_kind":"pct100","fmt_dec":2,"fmt_suf":"%","pref":"","correctiva":true,"pattern":[true,true,true,true,false,false,false],"runs":[[4,6]],"run_max":3},{"key":"costo_prod_cpo","sec":"E","n":13,"name":"Costo de Producción por TM de Aceite Crudo de Palma","unit":"$/TM","meta":"≤ $1,079.17 por TM de CPO producida","meta_v":1079.17,"dir":"le","status":"no","suspendido":false,"racha":"Segundo mes consecutivo fuera de presupuesto · acción correctiva abierta","meets_annual":true,"budget":[1350.0,1300.0,1200.0,1150.0,1100.0,1000.0],"real":[1001.75,1071.54,1061.86,956.91,987.63,1055.18],"budget_jul":900.0,"budget_ago":850.0,"jul_real":1020.76,"esperado":980.0,"esp_txt":"$980.00","why":"Segundo mes consecutivo con no conformidad y acción correctiva abierta: $1,020.76 contra un presupuesto de $900, aunque mejora $34 frente a junio ($1,055.18) y sigue por debajo de la meta anual de $1,079.17. El costo de la fruta representa el 89.5% del costo total por tonelada de aceite —la ficha lo cifra de forma conservadora en más del 75%—: de los $34.42 de mejora frente a junio, unos $30 vienen del proceso.","trend":"Se espera $980.00 para agosto por el impacto del mayor costo de la fruta, que representa más del 75% de lo facturado por la extracción de aceite crudo de una tonelada de fruta fresca procesada. No obstante, disminuirán los costos variables, de mantenimiento y fijos, lo que permitirá compensar y bajar levemente el costo.","jul_real_f":"1,020.76","jul_budget_f":"900.00","delta_txt":"+13.4%","fmt_kind":"raw","fmt_dec":2,"fmt_suf":"","pref":"$","correctiva":true,"pattern":[true,true,true,true,true,false,false],"runs":[[5,6]],"run_max":2},{"key":"costo_proceso_cpo","sec":"E","n":14,"name":"Costo de Proceso por TM de Aceite Crudo de Palma","unit":"$/TM","meta":"≤ $208.33 por TM de CPO producida","meta_v":208.33,"dir":"le","status":"ok","suspendido":false,"racha":null,"meets_annual":false,"budget":[350.0,300.0,250.0,200.0,200.0,200.0],"real":[113.12,197.65,160.58,128.11,118.19,137.89],"budget_jul":150.0,"budget_ago":125.0,"jul_real":107.5,"esperado":100.0,"esp_txt":"$100.00","why":"Mejor registro del año excluyendo el costo de compra de la fruta: $107.50 contra un presupuesto de $150 y $137.89 en junio. La dilución de costos fijos por el volumen procesado explica la caída de más de $30 por tonelada.","trend":"Se espera $100.00 para agosto porque los costos de mantenimiento, fijos y variables serán menores en términos nominales que los del mes anterior, y además se procesará mayor cantidad de fruta, lo que permite seguir diluyendo los costos fijos.","jul_real_f":"107.50","jul_budget_f":"150.00","delta_txt":"-28.3%","fmt_kind":"raw","fmt_dec":2,"fmt_suf":"","pref":"$","correctiva":false,"pattern":[true,true,true,true,true,true,true],"runs":[],"run_max":0},{"key":"productividad","sec":"E","n":15,"name":"Productividad Laboral","unit":"TM/h-h","meta":"≥ 0.49 TM de fruta fresca por hora pagada","meta_v":0.49,"dir":"ge","status":"no","suspendido":false,"racha":"Tercer mes consecutivo fuera de presupuesto · acción correctiva abierta","meets_annual":true,"budget":[0.25,0.25,0.4,0.4,0.65,0.75],"real":[0.5915264074289031,0.39051808406647115,0.5125829266955425,0.5171206225680934,0.6207764741427061,0.5127312461882496],"budget_jul":0.75,"budget_ago":0.7,"jul_real":0.5722753439359938,"esperado":0.6,"esp_txt":"0.60 TM/h-h","why":"Tercer mes consecutivo con incumplimiento y acción correctiva abierta: 0.57 TM por hora-hombre contra un presupuesto de 0.75, aunque mejora frente al 0.51 de junio y se mantiene por encima de la meta anual de 0.49. El personal y las horas pagadas crecieron más rápido que el volumen procesado.","trend":"Se espera 0.60 para agosto porque se procesará mayor cantidad de fruta que el mes anterior con un número similar de personal y de horas trabajadas.","jul_real_f":"0.57 TM/h-h","jul_budget_f":"0.75 TM/h-h","delta_txt":"-23.7%","fmt_kind":"raw","fmt_dec":2,"fmt_suf":" TM/h-h","pref":"","correctiva":true,"pattern":[true,true,true,true,false,false,false],"runs":[[4,6]],"run_max":3},{"key":"molienda","sec":"E","n":16,"name":"Capacidad de Molienda","unit":"TM/hr","meta":"≥ 27.00 TM de fruta fresca por hora","meta_v":27.0,"dir":"ge","status":"ok","suspendido":false,"racha":null,"meets_annual":false,"budget":[27.0,27.0,27.0,27.0,27.0,27.0],"real":[29.38,29.01,29.4,29.42,29.25,29.73],"budget_jul":27.0,"budget_ago":27.0,"jul_real":29.83,"esperado":29.0,"esp_txt":"29.00 TM/hr","why":"Nuevo récord del año: 29.83 TM/hr contra un presupuesto de 27.00, superando el 29.73 de junio. La planta operó estable durante toda la temporada alta, con control de la calidad de prensado y una correcta digestión y cocción de la fruta.","trend":"Se espera 29.00 TM/hr para agosto: mantener la capacidad de molienda sin comprometer el control de pérdidas, mediante el monitoreo frecuente de la calidad de prensado y asegurando la correcta digestión y cocción de la fruta.","jul_real_f":"29.83 TM/hr","jul_budget_f":"27.00 TM/hr","delta_txt":"+10.5%","fmt_kind":"raw","fmt_dec":2,"fmt_suf":" TM/hr","pref":"","correctiva":false,"pattern":[true,true,true,true,true,true,true],"runs":[],"run_max":0},{"key":"horas_paro","sec":"E","n":17,"name":"Reducción de Horas de Paro","unit":"%","meta":"≤ 9% de horas de paro por factor mecánico o eléctrico","meta_v":9.0,"dir":"le","status":"ok","suspendido":false,"racha":null,"meets_annual":false,"budget":[9.0,9.0,9.0,9.0,9.0,9.0],"real":[7.59,5.91,9.33,4.3999999999999995,7.969999999999999,3.93],"budget_jul":9.0,"budget_ago":9.0,"jul_real":3.9800000000000004,"esperado":3.5,"esp_txt":"3.50%","why":"Cumple con amplio margen: 3.98% de horas de paro contra un tope de 9%, prácticamente igual al 3.93% de junio. Son los dos mejores meses del año y confirman la estabilidad mecánica y eléctrica de la planta en plena temporada alta.","trend":"Se espera 3.5% de horas de paro sobre horas programadas en agosto, con reducción sostenida de los tiempos de paro, identificación y eliminación de causas raíz, mejora en la planificación y programación e incremento de la disponibilidad de equipos.","jul_real_f":"3.98%","jul_budget_f":"9.00%","delta_txt":"-5.02 pts","fmt_kind":"pct100","fmt_dec":2,"fmt_suf":"%","pref":"","correctiva":false,"pattern":[true,true,false,true,true,true,true],"runs":[],"run_max":0},{"key":"tea","sec":"E","n":18,"name":"Tasa de Extracción de Aceite Crudo de Palma (TEA)","unit":"%","meta":"≥ 19.81% de aceite sobre TM de fruta procesada","meta_v":19.81,"dir":"ge","status":"no","suspendido":false,"racha":"Segundo mes consecutivo fuera de presupuesto","meets_annual":true,"budget":[18.0,18.5,19.0,20.0,20.5,20.5],"real":[17.27,17.79,17.69,20.119999999999997,20.64,20.11],"budget_jul":20.75,"budget_ago":21.0,"jul_real":20.47,"esperado":21.0,"esp_txt":"21.00%","why":"Queda 0.28 puntos por debajo del presupuesto (20.47% contra 20.75%), aunque mejora frente al 20.11% de junio y supera la meta anual de 19.81%. El potencial de aceite de la fruta de acopio sigue limitando la extracción pese al buen control de proceso.","trend":"Se espera 21.00% para agosto siguiendo con la implementación de nuevas metodologías de inspección en la recepción de fruta —que a la vez sirven para dar indicaciones al departamento de agricultura y asesorar a productores— el control de los parámetros críticos de proceso (esterilización, digestión, prensado y clarificación), la reducción de pérdidas operativas y la estabilidad de los equipos de planta.","jul_real_f":"20.47%","jul_budget_f":"20.75%","delta_txt":"-0.28 pts","fmt_kind":"pct100","fmt_dec":2,"fmt_suf":"%","pref":"","correctiva":true,"pattern":[false,false,false,true,true,false,false],"runs":[[0,2],[5,6]],"run_max":3},{"key":"teap","sec":"E","n":19,"name":"Tasa de Extracción de Aceite de Palmiste (TEAP)","unit":"%","meta":"≥ 1.75% de aceite de palmiste sobre TM de fruta","meta_v":1.75,"dir":"ge","status":"ok","suspendido":false,"racha":null,"meets_annual":false,"budget":[1.7500000000000002,1.7500000000000002,1.7500000000000002,1.7500000000000002,1.7500000000000002,1.7500000000000002],"real":[1.7500000000000002,1.6500000000000001,1.94,1.7399999999999998,1.78,2.08],"budget_jul":1.7500000000000002,"budget_ago":1.7500000000000002,"jul_real":1.96,"esperado":1.95,"esp_txt":"1.95%","why":"Tercer mes consecutivo en cumplimiento (1.96% contra 1.75% presupuestado), aunque baja desde el récord de 2.08% de junio. Se sostiene con el control de temperatura en los silos de secado de almendra y la disponibilidad de las prensas primaria y secundarias.","trend":"Se espera 1.95% para agosto: mantener el promedio de extracción alcanzado gracias a un mejor control de los parámetros de proceso, los controles de temperatura en silos de secado de almendra, los controles de laboratorio que indican la continuidad del proceso y la disponibilidad de recursos y repuestos para el mantenimiento operativo de las prensas.","jul_real_f":"1.96%","jul_budget_f":"1.75%","delta_txt":"+0.21 pts","fmt_kind":"pct100","fmt_dec":2,"fmt_suf":"%","pref":"","correctiva":false,"pattern":[true,false,true,false,true,true,true],"runs":[],"run_max":0},{"key":"energia","sec":"E","n":20,"name":"Eficiencia de Consumo Energético","unit":"%","meta":"> 85% de energía proveniente de fuente renovable","meta_v":85.0,"dir":"ge","status":"ok","suspendido":false,"racha":null,"meets_annual":false,"budget":[85.0,85.0,85.0,85.0,85.0,85.0],"real":[96.2,92.28,95.13000000000001,93.8,92.54,79.80000000000001],"budget_jul":85.0,"budget_ago":85.0,"jul_real":85.79,"esperado":88.0,"esp_txt":"88.00%","why":"Recupera el cumplimiento tras el bache de junio: 85.79% de autosuficiencia contra una meta de 85%, frente al 79.80% del mes anterior. La avería del alternador de la turbina Dresser-Rand de 1 MW había obligado a reactivar la turbina Prime de 900 kW, con un costo de energía cercano a L. 350,000 al mes; en julio la generación propia se normalizó.","trend":"Se prevé 88.00% para agosto: se seguirá trabajando con referencia de ENEE, pero con la turbina de vapor en mejores condiciones tras el mantenimiento de 8,000 horas y con dos motores Shengdong disponibles.","jul_real_f":"85.79%","jul_budget_f":"85.00%","delta_txt":"+0.79 pts","fmt_kind":"pct100","fmt_dec":2,"fmt_suf":"%","pref":"","correctiva":false,"pattern":[true,true,true,true,true,false,true],"runs":[],"run_max":0},{"key":"accidentes","sec":"E","n":21,"name":"Número de Accidentes Laborales","unit":"#","meta":"≤ 1 accidente por mes","meta_v":1,"dir":"le","status":"no","suspendido":false,"racha":null,"meets_annual":false,"budget":[1.0,1.0,1.0,1.0,1.0,1.0],"real":[0.0,2.0,2.0,0.0,1.0,1.0],"budget_jul":1.0,"budget_ago":1.0,"jul_real":2.0,"esperado":0.0,"esp_txt":"0 accidentes","why":"Dos accidentes con tiempo perdido contra una meta de 1. El primero: un colaborador se colocó detrás de la cargadora en punto ciego y la máquina le pasó el pie, con fractura. El segundo, el 18 de julio a las 2:00 a.m. en el área de prensa, manipulando una barra de metal: golpe y atrapamiento del dedo meñique de la mano izquierda, con contusión y herida abierta que requirió atención médica.","trend":"Se espera un resultado de 0 accidentes. Se toman medidas constantemente para mejorar las condiciones laborales, con nuevos grupos de WhatsApp de Seguridad Industrial e Higiene y cuadros de control de seguimiento del cumplimiento para la disminución de áreas inseguras. Se refuerzan además las capacitaciones, la supervisión de tareas críticas, el control de puntos ciegos y el establecimiento de pasos peatonales.","jul_real_f":"2","jul_budget_f":"1","delta_txt":"+1","fmt_kind":"raw","fmt_dec":0,"fmt_suf":"","pref":"","correctiva":true,"pattern":[true,false,false,true,true,true,false],"runs":[[1,2]],"run_max":2},{"key":"pnc","sec":"E","n":22,"name":"Porcentaje de Producto No Conforme","unit":"%","meta":"≤ 1.50% del total de despachos","meta_v":1.5,"dir":"le","status":"ok","suspendido":false,"racha":null,"meets_annual":false,"budget":[1.5,1.5,1.5,1.5,1.5,1.5],"real":[0.0,0.0,0.0,0.0,0.0,0.0],"budget_jul":1.5,"budget_ago":1.5,"jul_real":0.0,"esperado":0.0,"esp_txt":"0.00%","why":"Séptimo mes consecutivo en cero: ninguna devolución ni concesión sobre el total de envíos, contra un presupuesto que admite hasta 1.50%. En cada despacho se cumple con la calidad de producto final requerida por cada cliente según los respectivos contratos.","trend":"Se espera 0% para agosto, debido a que en cada despacho se cumple con la calidad de producto final requerida por cada cliente, establecida en los respectivos contratos.","jul_real_f":"0.00%","jul_budget_f":"1.50%","delta_txt":"-1.50 pts","fmt_kind":"pct100","fmt_dec":2,"fmt_suf":"%","pref":"","correctiva":false,"pattern":[true,true,true,true,true,true,true],"runs":[],"run_max":0},{"key":"perdidas","sec":"E","n":23,"name":"Pérdidas de Aceite Crudo de Palma","unit":"%","meta":"≤ 1.75% de pérdidas de aceite crudo","meta_v":1.75,"dir":"le","status":"ok","suspendido":false,"racha":null,"meets_annual":false,"budget":[1.7500000000000002,1.7500000000000002,1.7500000000000002,1.7500000000000002,1.7500000000000002,1.7500000000000002],"real":[1.79,1.6400000000000001,1.49,1.4500000000000002,1.58,1.51],"budget_jul":1.7500000000000002,"budget_ago":1.7500000000000002,"jul_real":1.4500000000000002,"esperado":1.65,"esp_txt":"1.65%","why":"Mejor resultado del año: 1.45% de pérdidas contra un tope de 1.75%, igualando el mínimo de abril y mejorando el 1.51% de junio. El control de parámetros de proceso y la estabilidad de la clarificación explican el resultado.","trend":"Se proyecta 1.65% para agosto —un deterioro respecto al 1.45% actual— debido a fallas operativas en clarificación (tridecanter). El indicador se mantendría dentro de la meta, pero la ficha no consigna un plan de mejora asociado.","jul_real_f":"1.45%","jul_budget_f":"1.75%","delta_txt":"-0.30 pts","fmt_kind":"pct100","fmt_dec":2,"fmt_suf":"%","pref":"","correctiva":false,"pattern":[false,true,true,true,true,true,true],"runs":[],"run_max":0},{"key":"acidez_cpo","sec":"E","n":24,"name":"Porcentaje de Acidez en Aceite Crudo de Palma","unit":"%","meta":"≤ 4.90% de acidez en la muestra","meta_v":4.9,"dir":"le","status":"ok","suspendido":false,"racha":null,"meets_annual":false,"budget":[5.0,5.0,5.0,4.8,4.8,4.8],"real":[4.74,4.8500000000000005,4.03,4.19,3.37,3.58],"budget_jul":4.8,"budget_ago":4.8,"jul_real":3.83,"esperado":4.3,"esp_txt":"4.30%","why":"Cumple con margen (3.83% contra un tope de 4.80% presupuestado), con un leve repunte frente al 3.58% de junio por el mayor tiempo entre corte y proceso de parte de la fruta de acopio.","trend":"Se espera 4.30% para agosto, debido a que se ha molido fruta de palma de días recientes al día de proceso.","jul_real_f":"3.83%","jul_budget_f":"4.80%","delta_txt":"-0.97 pts","fmt_kind":"pct100","fmt_dec":2,"fmt_suf":"%","pref":"","correctiva":false,"pattern":[true,true,true,true,true,true,true],"runs":[],"run_max":0},{"key":"hi_cpo","sec":"E","n":25,"name":"Humedad + Impurezas en Aceite Crudo de Palma (CPO)","unit":"%","meta":"≤ 0.23% de humedad + impurezas en la muestra","meta_v":0.23,"dir":"le","status":"ok","suspendido":false,"racha":null,"meets_annual":false,"budget":[0.25,0.25,0.25,0.2,0.2,0.2],"real":[0.21,0.18,0.16,0.16,0.2,0.13],"budget_jul":0.2,"budget_ago":0.2,"jul_real":0.18,"esperado":0.2,"esp_txt":"0.20%","why":"Cumple (0.18% contra un tope de 0.20% presupuestado), con un repunte respecto al 0.13% de junio que se mantiene holgadamente dentro de la especificación de los contratos.","trend":"Se espera 0.20% para agosto, debido a que se ha molido fruta de palma de días recientes al día de proceso.","jul_real_f":"0.18%","jul_budget_f":"0.20%","delta_txt":"-0.02 pts","fmt_kind":"pct100","fmt_dec":2,"fmt_suf":"%","pref":"","correctiva":false,"pattern":[true,true,true,true,true,true,true],"runs":[],"run_max":0},{"key":"acidez_pko","sec":"E","n":26,"name":"Porcentaje de Acidez en Aceite de Palmiste (PKO)","unit":"%","meta":"≤ 2.00% de acidez en la muestra","meta_v":2.0,"dir":"le","status":"ok","suspendido":false,"racha":null,"meets_annual":false,"budget":[2.0,2.0,2.0,2.0,2.0,2.0],"real":[0.51,0.5599999999999999,0.73,0.59,0.47000000000000003,0.5],"budget_jul":2.0,"budget_ago":2.0,"jul_real":0.58,"esperado":0.7,"esp_txt":"0.70%","why":"Cumple con amplio margen: 0.58% contra un tope de 2.00%. El prensado de almendra reciente mantiene la acidez del PKO muy por debajo de lo exigido por los contratos.","trend":"Se espera 0.70% para agosto, debido a que se ha prensado almendra reciente.","jul_real_f":"0.58%","jul_budget_f":"2.00%","delta_txt":"-1.42 pts","fmt_kind":"pct100","fmt_dec":2,"fmt_suf":"%","pref":"","correctiva":false,"pattern":[true,true,true,true,true,true,true],"runs":[],"run_max":0},{"key":"hi_pko","sec":"E","n":27,"name":"Humedad + Impurezas en Aceite de Palmiste (PKO)","unit":"%","meta":"≤ 0.23% de humedad + impurezas en la muestra","meta_v":0.23,"dir":"le","status":"ok","suspendido":false,"racha":null,"meets_annual":false,"budget":[0.25,0.25,0.25,0.2,0.2,0.2],"real":[0.19,0.2,0.22,0.22,0.15,0.13],"budget_jul":0.2,"budget_ago":0.2,"jul_real":0.2,"esperado":0.2,"esp_txt":"0.20%","why":"Cumple justo en el presupuesto del mes (0.20% contra 0.20%) y dentro de la meta anual de 0.23%, con un repunte desde el 0.13% de junio que conviene vigilar en el secado de almendra.","trend":"Se proyecta 0.20% para agosto, coherente con la meta (≤ 0.23%) y con el histórico del indicador. Nota de control: la ficha de Control de Calidad consigna 0.7% en este campo, cifra copiada de la ficha de Acidez de PKO — a esta escala equivaldría al triple de la meta.","jul_real_f":"0.20%","jul_budget_f":"0.20%","delta_txt":"+0.00 pts","fmt_kind":"pct100","fmt_dec":2,"fmt_suf":"%","pref":"","correctiva":false,"pattern":[true,true,true,false,true,true,true],"runs":[],"run_max":0},{"key":"tanques","sec":"E","n":28,"name":"Promedio de Acidez en Tanques de Almacenamiento","unit":"%","meta":"≤ 5.30% de acidez promedio en el tanque","meta_v":5.3,"dir":"le","status":"ok","suspendido":false,"racha":null,"meets_annual":false,"budget":[5.6000000000000005,5.6000000000000005,5.6000000000000005,5.0,5.0,5.0],"real":[5.07,4.87,4.17,4.2700000000000005,3.3099999999999996,3.5700000000000003],"budget_jul":5.0,"budget_ago":5.0,"jul_real":4.1000000000000005,"esperado":4.3,"esp_txt":"4.30%","why":"Cumple (4.10% contra un tope de 5.00% presupuestado), con un repunte desde el 3.57% de junio explicado por el mayor tiempo de permanencia del aceite en tanque durante el mes.","trend":"Se espera 4.30% para agosto, debido a que se ha molido fruta de palma de días recientes al día de proceso.","jul_real_f":"4.10%","jul_budget_f":"5.00%","delta_txt":"-0.90 pts","fmt_kind":"pct100","fmt_dec":2,"fmt_suf":"%","pref":"","correctiva":false,"pattern":[true,true,true,true,true,true,true],"runs":[],"run_max":0},{"key":"despacho_cpo","sec":"E","n":29,"name":"Cumplimiento de Despachos de Aceite Crudo (CPO)","unit":"%","meta":"≥ 65% de cumplimiento del programa de venta","meta_v":65.0,"dir":"ge","status":"ok","suspendido":false,"racha":null,"meets_annual":false,"budget":[65.0,65.0,65.0,65.0,65.0,65.0],"real":[278.84000000000003,170.55,186.87,113.61000000000001,108.33999999999999,132.95],"budget_jul":65.0,"budget_ago":65.0,"jul_real":111.03,"esperado":170.0,"esp_txt":"170.00%","why":"Cumple con holgura (111.03% contra 65% presupuestado), aunque baja desde el 132.95% de junio: parte del contrato con CAICESA quedó pendiente de retiro al cierre del mes, lo que trasladó volumen a agosto.","trend":"Se espera 170.00% para agosto porque buen volumen del contrato de aceite crudo de palma pendiente del cliente CAICESA del mes anterior se retirará en el presente mes: son más de 3,000 toneladas de aceite crudo de palma planificadas para despacho en agosto de 2026.","jul_real_f":"111.03%","jul_budget_f":"65.00%","delta_txt":"+46.03 pts","fmt_kind":"pct100","fmt_dec":2,"fmt_suf":"%","pref":"","correctiva":false,"pattern":[true,true,true,true,true,true,true],"runs":[],"run_max":0},{"key":"despacho_pko","sec":"E","n":30,"name":"Cumplimiento de Despachos de Aceite de Palmiste (PKO)","unit":"%","meta":"≥ 65% de cumplimiento del programa de venta","meta_v":65.0,"dir":"ge","status":"ok","suspendido":false,"racha":null,"meets_annual":false,"budget":[65.0,65.0,65.0,65.0,65.0,65.0],"real":[354.66,314.61,224.14999999999998,195.37,106.23,113.45],"budget_jul":65.0,"budget_ago":65.0,"jul_real":128.84,"esperado":120.0,"esp_txt":"120.00%","why":"Mejora a 128.84% desde el 113.45% de junio, muy por encima del 65% presupuestado. El repunte del precio internacional del PKO impulsó los retiros del mes.","trend":"Se espera 120.00% para agosto porque el volumen de aceite de PKO contratado con HONDUPALMA será mayor y se dispone de inventario suficiente para hacer todos esos despachos.","jul_real_f":"128.84%","jul_budget_f":"65.00%","delta_txt":"+63.84 pts","fmt_kind":"pct100","fmt_dec":2,"fmt_suf":"%","pref":"","correctiva":false,"pattern":[true,true,true,true,true,true,true],"runs":[],"run_max":0}],"D":[{"key":"venta_pkc","sec":"D","n":1,"name":"Cumplimiento de Despacho de Harina de Palmiste (PKC)","unit":"%","meta":"≥ 65% de cumplimiento del programa de venta","meta_v":65.0,"dir":"ge","status":"ok","suspendido":false,"racha":null,"meets_annual":false,"budget":[65.0,65.0,65.0,65.0,65.0,65.0],"real":[305.67,126.44,171.39,112.33,163.13,87.4],"budget_jul":65.0,"budget_ago":65.0,"jul_real":122.91000000000001,"esperado":135.0,"esp_txt":"135.00%","why":"Se recupera con fuerza: 122.91% contra 65% presupuestado, frente al 87.40% de junio, que había sido el punto más bajo del año. La rebaja de precios para igualar a la competencia en el mercado interno reactivó las ventas.","trend":"Se espera 135.00% para agosto porque se rebajaron los precios para estar al nivel de la competencia en el mercado interno. Se cuenta ya con dos clientes grandes para la compra de harina de coquito —Corporación Merendón (COMERSA) y CARGILL de Honduras, con un contrato de 100 TM este mes—, lo que permitirá que no quede un alto inventario al cierre de mes. Esto se está vigilando para evitar accidentes de incendio por acumulación de harina en inventario.","jul_real_f":"122.91%","jul_budget_f":"65.00%","delta_txt":"+57.91 pts","fmt_kind":"pct100","fmt_dec":2,"fmt_suf":"%","pref":"","correctiva":false,"pattern":[true,true,true,true,true,true,true],"runs":[],"run_max":0},{"key":"composicion","sec":"D","n":2,"name":"Composición de Harina de Palmiste","unit":"%","meta":"≤ 56.00% de harina sobre la producción total de palmiste","meta_v":56.0,"dir":"le","status":"no","suspendido":false,"racha":"Segundo mes consecutivo fuera de presupuesto · requiere acción correctiva","meets_annual":false,"budget":[56.00000000000001,56.00000000000001,56.00000000000001,56.00000000000001,56.00000000000001,56.00000000000001],"real":[54.36,54.1,55.22,54.84,54.98,56.230000000000004],"budget_jul":56.00000000000001,"budget_ago":56.00000000000001,"jul_real":58.099999999999994,"esperado":58.0,"esp_txt":"58.00%","why":"Segundo mes consecutivo fuera de rango y el peor registro del año: 58.10% contra una meta de 56.00%, tras el 56.23% de junio. Una composición más alta significa más harina —el producto de menor valor— frente al aceite de palmiste, que es el de mayor valor: el aumento se debe al reproceso del subproducto obtenido en el tamiz, que incrementa la producción de sacos de harina, y va de la mano con el deterioro del residual de aceite en harina.","trend":"La ficha proyecta mantener 58% en agosto con un mejor control de los parámetros de proceso, los controles de temperatura en silos de secado de almendra, los controles de laboratorio y la disponibilidad de repuestos para el mantenimiento de las prensas. Al ser un indicador donde menor es mejor, esa proyección deja el resultado dos puntos por encima de la meta y requiere acción correctiva.","jul_real_f":"58.10%","jul_budget_f":"56.00%","delta_txt":"+2.10 pts","fmt_kind":"pct100","fmt_dec":2,"fmt_suf":"%","pref":"","correctiva":true,"pattern":[true,true,true,true,true,false,false],"runs":[[5,6]],"run_max":2},{"key":"agua","sec":"D","n":3,"name":"Eficiencia en Consumo de Agua por Tonelada de Fruta","unit":"m³/TM","meta":"≤ 0.60 m³ de agua por TM de fruta procesada","meta_v":0.6,"dir":"le","status":"ok","suspendido":false,"racha":null,"meets_annual":false,"budget":[0.6,0.6,0.6,0.6,0.6,0.6],"real":[0.53,0.44,0.41,0.45,0.42,0.41],"budget_jul":0.6,"budget_ago":0.6,"jul_real":0.42,"esperado":0.5,"esp_txt":"0.50 m³/TM","why":"Cumple con margen (0.42 m³/TM contra un tope de 0.60), en línea con el 0.41 de junio. El consumo se mantiene bajo gracias al control operativo del área de prensado y a una correcta dilución en los licores de prensa.","trend":"Se espera 0.50 m³/TM de fruta procesada para agosto: mantener un consumo bajo mediante el control operativo del área de prensado, asegurando una correcta dilución en los licores de prensa.","jul_real_f":"0.42 m³/TM","jul_budget_f":"0.60 m³/TM","delta_txt":"-30.0%","fmt_kind":"raw","fmt_dec":2,"fmt_suf":" m³/TM","pref":"","correctiva":false,"pattern":[true,true,true,true,true,true,true],"runs":[],"run_max":0},{"key":"inventario","sec":"D","n":4,"name":"Precisión de Inventario Físico","unit":"%","meta":"≤ 1.20% de diferencia entre físico y sistema","meta_v":1.2,"dir":"le","status":"ok","suspendido":false,"racha":null,"meets_annual":false,"budget":[1.2,1.2,1.2,1.2,1.2,1.2],"real":[0.0,0.0,0.0,0.0,0.0,0.0],"budget_jul":1.2,"budget_ago":1.2,"jul_real":0.001,"esperado":0.0,"esp_txt":"0.000%","why":"Cumple con máxima exactitud: 0.001% de diferencia contra un presupuesto de 1.20%. En el conteo físico de 4,007 ítems, el costo según el sistema (SMA) fue L. 18,001,328.96 y el costo físico L. 18,001,508.96 — una diferencia total de L. 180.00, con 1 ítem con sobrante, 0 ítems con faltante y 4,006 ítems sin diferencia.","trend":"Se espera alcanzar una diferencia total del 0% entre el inventario físico y lo registrado en el sistema SMA o SICO. Las recomendaciones del conteo son: asignar costo unitario a los 8 ítems identificados con existencia física pero sin valorar (6 en COINSU y 2 en GEOPALSA), regularizar en el sistema el ajuste por sobrante de L. 180.00 en Equipo de Seguridad Industrial documentando su causa, y mantener la periodicidad de los conteos físicos en ambas bodegas.","jul_real_f":"0.001%","jul_budget_f":"1.200%","delta_txt":"-1.199 pts","fmt_kind":"pct100","fmt_dec":3,"fmt_suf":"%","pref":"","correctiva":false,"pattern":[true,true,true,true,true,true,true],"runs":[],"run_max":0},{"key":"analisis_potencial","sec":"D","n":5,"name":"Análisis de Potencial de Aceite Crudo de Palma","unit":"#","meta":"Suspendido por instrucción de Presidencia","meta_v":null,"dir":"ge","status":"sp","suspendido":true,"racha":null,"meets_annual":false,"budget":[2.0,2.0,2.0,3.0,3.0,3.0],"real":[3.0,3.0,3.0,18.0,14.0,14.0],"budget_jul":null,"budget_ago":null,"jul_real":0.0,"esperado":0.0,"esp_txt":"Suspendido","why":"Sin ejecución en julio (0 análisis frente a los 14 de junio). Por instrucción de Presidencia se suspende indefinidamente la ejecución de este análisis hasta nuevo aviso, por lo que el indicador queda fuera del semáforo de cumplimiento y no computa en el porcentaje global del mes.","trend":"El indicador permanecerá en 0 mientras se mantenga la instrucción de Presidencia. Se reactivará únicamente cuando la Presidencia lo indique; el Excel maestro ya registra la meta de julio a diciembre como «N/A».","jul_real_f":"0","jul_budget_f":"—","delta_txt":"—","fmt_kind":"raw","fmt_dec":0,"fmt_suf":"","pref":"","correctiva":false,"pattern":[null,null,null,null,null,null,null],"runs":[],"run_max":0},{"key":"residual","sec":"D","n":6,"name":"Residual de Aceite de Palmiste en Harina","unit":"%","meta":"≤ 8.81% de aceite residual en la harina","meta_v":8.81,"dir":"le","status":"no","suspendido":false,"racha":"Cuarto mes consecutivo fuera de presupuesto · acción correctiva abierta","meets_annual":false,"budget":[9.0,9.0,9.0,8.75,8.75,8.75],"real":[8.57,8.559999999999999,8.5,8.85,10.059999999999999,10.43],"budget_jul":8.75,"budget_ago":8.75,"jul_real":11.35,"esperado":8.8,"esp_txt":"8.80%","why":"Cuarto mes consecutivo de deterioro y el peor dato del año: 11.35% contra un presupuesto de 8.75%, tras 10.43% en junio y 10.06% en mayo. Con acción correctiva abierta, es la principal pérdida de valor de la planta de palmiste y explica también el alza de la composición de harina.","trend":"Se espera 8.80% para agosto debido a la instalación del radiador en el silo pulmón de la planta de PKO. Sería una corrección de 2.55 puntos en un solo mes, la mayor proyectada del tablero.","jul_real_f":"11.35%","jul_budget_f":"8.75%","delta_txt":"+2.60 pts","fmt_kind":"pct100","fmt_dec":2,"fmt_suf":"%","pref":"","correctiva":true,"pattern":[true,true,true,false,false,false,false],"runs":[[3,6]],"run_max":4},{"key":"fruta_verde","sec":"D","n":7,"name":"Calidad de Fruta Verde en Proceso","unit":"%","meta":"≤ 1.5% de fruta verde sobre fruta procesada","meta_v":1.5,"dir":"le","status":"ok","suspendido":false,"racha":null,"meets_annual":false,"budget":[1.5,1.5,1.5,1.5,1.5,1.5],"real":[1.1400000000000001,1.49,1.66,0.53,0.7000000000000001,0.26],"budget_jul":1.5,"budget_ago":1.5,"jul_real":0.2,"esperado":0.3,"esp_txt":"0.20% – 0.40%","why":"Mejor resultado del año: 0.20% de fruta verde contra un tope de 1.5%, mejorando el 0.26% de junio. La evaluación en recepción ha mejorado con claridad la calidad de la fruta que entra a proceso desde el pico de 1.66% de marzo.","trend":"Se espera que el resultado ronde entre 0.20% y 0.40% en agosto, ya que se planea implementar una evaluación de fruta más exigente con el fin de mejorar el porcentaje de extracción en planta.","jul_real_f":"0.20%","jul_budget_f":"1.50%","delta_txt":"-1.30 pts","fmt_kind":"pct100","fmt_dec":2,"fmt_suf":"%","pref":"","correctiva":false,"pattern":[true,true,false,true,true,true,true],"runs":[],"run_max":0},{"key":"camaras","sec":"D","n":8,"name":"Porcentaje de Cámaras Operativas","unit":"%","meta":"≥ 87% de cámaras en funcionamiento","meta_v":87.0,"dir":"ge","status":"ok","suspendido":false,"racha":null,"meets_annual":false,"budget":[87.0,87.0,87.0,87.0,87.0,87.0],"real":[90.41,97.14,95.77,93.15,97.18,95.95],"budget_jul":87.0,"budget_ago":87.0,"jul_real":97.26,"esperado":98.0,"esp_txt":"98.00%","why":"Cumple y mejora: 97.26% de cámaras operativas contra un presupuesto de 87%, el mejor registro del año, por encima del 97.18% de mayo y del 95.95% de junio.","trend":"Se espera 98% para agosto con la reparación de las cámaras que se encuentran en mal estado.","jul_real_f":"97.26%","jul_budget_f":"87.00%","delta_txt":"+10.26 pts","fmt_kind":"pct100","fmt_dec":2,"fmt_suf":"%","pref":"","correctiva":false,"pattern":[true,true,true,true,true,true,true],"runs":[],"run_max":0},{"key":"reporte_camaras","sec":"D","n":9,"name":"Cumplimiento de Reporte Diario de Incidencias de Cámaras","unit":"%","meta":"≥ 85% de días hábiles con reporte enviado","meta_v":85.0,"dir":"ge","status":"ok","suspendido":false,"racha":null,"meets_annual":false,"budget":[85.0,85.0,85.0,85.0,85.0,85.0],"real":[92.58999999999999,100.0,96.88,88.46000000000001,100.0,96.0],"budget_jul":85.0,"budget_ago":85.0,"jul_real":100.0,"esperado":96.0,"esp_txt":"96.00%","why":"Cumplimiento total en julio: 100% de los días hábiles con reporte general enviado, contra un presupuesto de 85% y frente al 96% de junio.","trend":"La ficha de IT proyecta 96% para agosto con envío de reportes todos los días — una cifra por debajo del 100% alcanzado en julio, pese a que el propio texto plantea mantener el envío diario.","jul_real_f":"100.00%","jul_budget_f":"85.00%","delta_txt":"+15.00 pts","fmt_kind":"pct100","fmt_dec":2,"fmt_suf":"%","pref":"","correctiva":false,"pattern":[true,true,true,true,true,true,true],"runs":[],"run_max":0},{"key":"soportes","sec":"D","n":10,"name":"Eficacia en la Atención de Soportes Técnicos","unit":"%","meta":"≥ 80% de soportes resueltos","meta_v":80.0,"dir":"ge","status":"ok","suspendido":false,"racha":null,"meets_annual":false,"budget":[80.0,80.0,80.0,80.0,80.0,80.0],"real":[89.47,83.33,88.89,90.0,85.71,83.33],"budget_jul":80.0,"budget_ago":80.0,"jul_real":86.0,"esperado":86.0,"esp_txt":"86.00%","why":"Cumple y mejora: 86% de eficacia contra un presupuesto de 80%, por encima del 83.33% de junio. Nota de control: la ficha de IT consigna 83.33% —el mismo valor del mes anterior—; se toma el 86% del Excel maestro.","trend":"Se pretende resolver los tickets en tiempo y forma para sostener el 86% en agosto.","jul_real_f":"86.00%","jul_budget_f":"80.00%","delta_txt":"+6.00 pts","fmt_kind":"pct100","fmt_dec":2,"fmt_suf":"%","pref":"","correctiva":false,"pattern":[true,true,true,true,true,true,true],"runs":[],"run_max":0},{"key":"if","sec":"D","n":11,"name":"Índice de Frecuencia de Accidentes (IF)","unit":"índice","meta":"≤ 4 accidentes con tiempo perdido por 200,000 h-h","meta_v":4.0,"dir":"le","status":"no","suspendido":false,"racha":"Segundo mes consecutivo fuera de presupuesto · acción correctiva abierta","meets_annual":false,"budget":[4.0,4.0,4.0,4.0,4.0,4.0],"real":[0.0,0.72,0.47,0.52,0.24,8.59],"budget_jul":4.0,"budget_ago":4.0,"jul_real":17.17,"esperado":0.0,"esp_txt":"0.00","why":"Se dispara a 17.17 contra una meta de ≤ 4, el doble del 8.59 de junio, con acción correctiva abierta. Son 2 accidentes con tiempo perdido sobre 23,296 horas-hombre del mes. Es el peor registro del año en un indicador que no superó 0.72 en todo el primer cuatrimestre.","trend":"Se espera un resultado de 0 en agosto, al no registrarse accidentes con tiempo perdido, mediante el fortalecimiento de la capacitación, la supervisión de trabajos críticos, el control de circulación de peatones cerca de maquinaria y mejoras en los procedimientos de manipulación segura de materiales.","jul_real_f":"17.17","jul_budget_f":"4.00","delta_txt":"+329.3%","fmt_kind":"raw","fmt_dec":2,"fmt_suf":"","pref":"","correctiva":true,"pattern":[true,true,true,true,true,false,false],"runs":[[5,6]],"run_max":2},{"key":"ig","sec":"D","n":12,"name":"Índice de Gravedad de Accidentes (IG)","unit":"índice","meta":"≤ 40 días perdidos por 200,000 h-h","meta_v":40.0,"dir":"le","status":"no","suspendido":false,"racha":"Primer mes fuera de presupuesto en el año","meets_annual":false,"budget":[40.0,40.0,40.0,40.0,40.0,40.0],"real":[0.0,5.73,3.78,4.17,1.9,8.59],"budget_jul":40.0,"budget_ago":40.0,"jul_real":437.84,"esperado":0.0,"esp_txt":"0.00","why":"El indicador más alejado de su meta en todo el tablero: 437.84 contra un tope de 40, cincuenta veces el 8.59 de junio, que aún cumplía la meta. La causa son los 51 días perdidos registrados en el mes —frente a 1 día en junio— por la fractura de un colaborador arrollado por la cargadora en punto ciego.","trend":"Se espera un resultado de 0 en agosto, al no registrarse días perdidos por accidentes, mediante la prevención de accidentes con lesiones incapacitantes, el seguimiento de las medidas correctivas y el fortalecimiento de los controles de seguridad en las áreas donde se desarrollan tareas críticas.","jul_real_f":"437.84","jul_budget_f":"40.00","delta_txt":"+994.6%","fmt_kind":"raw","fmt_dec":2,"fmt_suf":"","pref":"","correctiva":false,"pattern":[true,true,true,true,true,true,false],"runs":[],"run_max":0},{"key":"ti","sec":"D","n":13,"name":"Índice de Incidencia de Accidentes (TI)","unit":"índice","meta":"≤ 4 accidentes por cada 100 trabajadores","meta_v":4.0,"dir":"le","status":"ok","suspendido":false,"racha":null,"meets_annual":false,"budget":[4.0,4.0,4.0,4.0,4.0,4.0],"real":[0.0,1.8,1.8,1.8,0.9,0.89],"budget_jul":4.0,"budget_ago":4.0,"jul_real":1.79,"esperado":0.0,"esp_txt":"0.00","why":"Se mantiene dentro de meta pese al doble de accidentes: 1.79 contra un tope de 4, con 2 accidentes sobre un promedio de 112 trabajadores. Es el único de los tres índices de accidentabilidad que sigue en cumplimiento.","trend":"Se espera un resultado de 0 en agosto, al no registrarse accidentes en el mes, manteniendo el Índice de Incidencia dentro de la meta mediante capacitación, supervisión y aplicación de controles de seguridad.","jul_real_f":"1.79","jul_budget_f":"4.00","delta_txt":"-55.2%","fmt_kind":"raw","fmt_dec":2,"fmt_suf":"","pref":"","correctiva":false,"pattern":[true,true,true,true,true,true,true],"runs":[],"run_max":0},{"key":"revision_doc","sec":"D","n":14,"name":"Cumplimiento de Revisión Documental","unit":"%","meta":"≥ 90% de documentos revisados sobre programados","meta_v":90.0,"dir":"ge","status":"ok","suspendido":false,"racha":null,"meets_annual":false,"budget":[90.0,90.0,90.0,90.0,90.0,90.0],"real":[100.0,100.0,100.0,100.0,100.0,100.0],"budget_jul":90.0,"budget_ago":90.0,"jul_real":100.0,"esperado":100.0,"esp_txt":"100.00%","why":"Séptimo mes consecutivo al 100% de cumplimiento, contra un mínimo de 90%. Se revisaron todos los documentos programados del cronograma de revisión documental, asegurando la vigencia de la información documentada del Sistema de Gestión de Calidad.","trend":"Se espera alcanzar el 100% de cumplimiento del indicador durante el próximo mes, debido a que los responsables de los procesos aún se encuentran realizando cambios en la documentación.","jul_real_f":"100.00%","jul_budget_f":"90.00%","delta_txt":"+10.00 pts","fmt_kind":"pct100","fmt_dec":2,"fmt_suf":"%","pref":"","correctiva":false,"pattern":[true,true,true,true,true,true,true],"runs":[],"run_max":0},{"key":"rentabilidad","sec":"D","n":15,"name":"Índice de Rentabilidad","unit":"%","meta":"≥ 1.67% de utilidad sobre ventas","meta_v":1.67,"dir":"ge","status":"ok","suspendido":false,"racha":null,"meets_annual":false,"budget":[-12.0,-10.0,-8.0,-5.0,0.0,5.0],"real":[18.26,21.89,10.05,27.55,17.39,18.26],"budget_jul":8.0,"budget_ago":13.0,"jul_real":21.959999999999997,"esperado":17.5,"esp_txt":"17.50%","why":"Segundo mejor registro del año: 21.96% contra un presupuesto de 8%, por encima del 18.26% de junio. El costo de ventas sobre ingresos bajó de 70.22% a 66.21% con la contención de los costos de proceso. Conviene matizar que cerca de 1.1 de los 3.7 puntos de mejora provienen del salto de otros ingresos (+L. 1.6 millones), que no es operativo.","trend":"Se espera 17.5% para agosto debido a que la extracción será mejor, pero eso no compensará el aumento considerable en el costo de la fruta. Las ventas serán similares por un menor volumen pero mejor precio de venta.","jul_real_f":"21.96%","jul_budget_f":"8.00%","delta_txt":"+13.96 pts","fmt_kind":"pct100","fmt_dec":2,"fmt_suf":"%","pref":"","correctiva":false,"pattern":[true,true,true,true,true,true,true],"runs":[],"run_max":0},{"key":"ot","sec":"D","n":16,"name":"Órdenes de Trabajo Completadas","unit":"%","meta":"≥ 80% de órdenes ejecutadas sobre programadas","meta_v":80.0,"dir":"ge","status":"ok","suspendido":false,"racha":null,"meets_annual":false,"budget":[80.0,80.0,80.0,80.0,80.0,80.0],"real":[86.17,85.76,89.95,82.44,85.95,86.11],"budget_jul":80.0,"budget_ago":80.0,"jul_real":87.55,"esperado":85.0,"esp_txt":"85.00%","why":"Cumple y mejora: 87.55% de órdenes de trabajo ejecutadas sobre programadas contra un presupuesto de 80%, por encima del 86.11% de junio y el mejor resultado del año después del 89.95% de marzo.","trend":"Se espera 85% de cumplimiento en agosto, con incremento sostenido del cumplimiento del plan, mejor calidad de la planificación, reducción del mantenimiento correctivo y las emergencias, aumento de la confiabilidad y disponibilidad de los equipos, e identificación y eliminación de causas de incumplimiento.","jul_real_f":"87.55%","jul_budget_f":"80.00%","delta_txt":"+7.55 pts","fmt_kind":"pct100","fmt_dec":2,"fmt_suf":"%","pref":"","correctiva":false,"pattern":[true,true,true,true,true,true,true],"runs":[],"run_max":0}],"T":[{"key":"capacitaciones","sec":"T","n":1,"name":"Cobertura de Capacitaciones","unit":"%","meta":"≥ 87% de los colaboradores programados, capacitados","meta_v":87.0,"dir":"ge","status":"ok","suspendido":false,"racha":null,"meets_annual":false,"frecuencia":"semestral","cortes":[{"label":"I semestre","real":98.54,"meta":87.0,"real_f":"98.54%","ok":true,"vigente":true},{"label":"II semestre","real":null,"meta":87.0,"real_f":"—","ok":null,"vigente":true}],"periodo":"I semestre","jul_real":98.54,"jul_real_f":"98.54%","jul_budget_f":"87.00%","delta_txt":"+11.54 pts","esperado":85.0,"esp_txt":"85.00%","esp_periodo":"II semestre","why":"El primer semestre cierra en 98.54% contra un presupuesto de 87%: se capacitó prácticamente a todos los colaboradores programados del período.","trend":"Para el segundo semestre se espera 85%, por debajo del presupuesto de 87%. Presidencia decidió pausar el gran volumen de capacitaciones durante la temporada alta por el tiempo operativo que demandan a la planta; con la ampliación a 45 TM/hr prevista para comenzar 2027 se dispondrá de un plan balanceado.","fmt_kind":"pct100","fmt_dec":2,"fmt_suf":"%","pref":"","correctiva":false,"pattern":[true,null],"runs":[],"run_max":0},{"key":"horas_capac","sec":"T","n":2,"name":"Cumplimiento de Horas de Capacitación","unit":"%","meta":"≥ 87% de las horas de capacitación programadas","meta_v":87.0,"dir":"ge","status":"ok","suspendido":false,"racha":null,"meets_annual":false,"frecuencia":"semestral","cortes":[{"label":"I semestre","real":100.0,"meta":87.0,"real_f":"100.00%","ok":true,"vigente":true},{"label":"II semestre","real":null,"meta":87.0,"real_f":"—","ok":null,"vigente":true}],"periodo":"I semestre","jul_real":100.0,"jul_real_f":"100.00%","jul_budget_f":"87.00%","delta_txt":"+13.00 pts","esperado":85.0,"esp_txt":"85.00%","esp_periodo":"II semestre","why":"El primer semestre cierra en 100% de las horas programadas contra un presupuesto de 87%: se impartieron todas las horas del plan.","trend":"Se espera 85% en el segundo semestre, por la misma pausa de capacitaciones durante la temporada alta que afecta a la cobertura.","fmt_kind":"pct100","fmt_dec":2,"fmt_suf":"%","pref":"","correctiva":false,"pattern":[true,null],"runs":[],"run_max":0},{"key":"clima","sec":"T","n":3,"name":"Clima Laboral (satisfacción del colaborador)","unit":"%","meta":"≥ 85% de satisfacción del colaborador","meta_v":85.0,"dir":"ge","status":"no","suspendido":false,"racha":null,"meets_annual":false,"frecuencia":"trimestral","cortes":[{"label":"T1","real":78.09,"meta":85.0,"real_f":"78.09%","ok":false,"vigente":true},{"label":"T2","real":84.64,"meta":85.0,"real_f":"84.64%","ok":false,"vigente":true},{"label":"T3","real":null,"meta":85.0,"real_f":"—","ok":null,"vigente":true},{"label":"T4","real":null,"meta":85.0,"real_f":"—","ok":null,"vigente":false}],"periodo":"T2","jul_real":84.64,"jul_real_f":"84.64%","jul_budget_f":"85.00%","delta_txt":"-0.36 pts","esperado":88.0,"esp_txt":"88.00%","esp_periodo":"T3","why":"Los dos cortes del año quedan por debajo de la meta de 85%: 78.09% en el primer trimestre y 84.64% en el segundo. La mejora entre ambos es de 6.55 puntos, pero el segundo se queda a 0.36 puntos de cumplir. El plan de acción se concentra en esterilización, digestores y generación, que son las áreas peor evaluadas.","trend":"La próxima evaluación trimestral apunta a 88%, con las acciones enfocadas en las tres áreas señaladas.","fmt_kind":"pct100","fmt_dec":2,"fmt_suf":"%","pref":"","correctiva":true,"pattern":[false,false,null,null],"runs":[],"run_max":0},{"key":"satisfaccion","sec":"T","n":4,"name":"Satisfacción de los Clientes","unit":"%","meta":"≥ 85% de satisfacción en la encuesta a clientes","meta_v":85.0,"dir":"ge","status":"ok","suspendido":false,"racha":null,"meets_annual":false,"frecuencia":"semestral","cortes":[{"label":"I semestre","real":94.66,"meta":85.0,"real_f":"94.66%","ok":true,"vigente":true},{"label":"II semestre","real":null,"meta":85.0,"real_f":"—","ok":null,"vigente":true}],"periodo":"I semestre","jul_real":94.66,"jul_real_f":"94.66%","jul_budget_f":"85.00%","delta_txt":"+9.66 pts","esperado":95.0,"esp_txt":"95.00%","esp_periodo":"II semestre","why":"94.66% en el corte del primer semestre contra una meta de 85%: casi diez puntos por encima del objetivo.","trend":"Se espera 95% en el segundo semestre, con la integración de CARGILL a la cartera de clientes.","fmt_kind":"pct100","fmt_dec":2,"fmt_suf":"%","pref":"","correctiva":false,"pattern":[true,null],"runs":[],"run_max":0},{"key":"retencion","sec":"T","n":5,"name":"Tasa de Retención de Clientes","unit":"%","meta":"≥ 65% de clientes retenidos","meta_v":65.0,"dir":"ge","status":"no","suspendido":false,"racha":null,"meets_annual":false,"frecuencia":"semestral","cortes":[{"label":"I semestre","real":47.05,"meta":65.0,"real_f":"47.05%","ok":false,"vigente":true},{"label":"II semestre","real":null,"meta":65.0,"real_f":"—","ok":null,"vigente":true}],"periodo":"I semestre","jul_real":47.05,"jul_real_f":"47.05%","jul_budget_f":"65.00%","delta_txt":"-17.95 pts","esperado":70.0,"esp_txt":"70.00%","esp_periodo":"II semestre","why":"47.05% contra una meta de 65%: es el incumplimiento más amplio de los cortes largos, casi 18 puntos por debajo del objetivo.","trend":"El plan comercial del segundo semestre apunta a 70%, apoyado en la reactivación de cuentas y en la integración de CARGILL.","fmt_kind":"pct100","fmt_dec":2,"fmt_suf":"%","pref":"","correctiva":true,"pattern":[false,null],"runs":[],"run_max":0},{"key":"adquisicion","sec":"T","n":6,"name":"Tasa de Adquisición de Clientes Nuevos","unit":"%","meta":"≥ 4% de clientes nuevos sobre la cartera","meta_v":4.0,"dir":"ge","status":"ok","suspendido":false,"racha":null,"meets_annual":false,"frecuencia":"semestral","cortes":[{"label":"I semestre","real":22.0,"meta":4.0,"real_f":"22.00%","ok":true,"vigente":true},{"label":"II semestre","real":null,"meta":4.0,"real_f":"—","ok":null,"vigente":true}],"periodo":"I semestre","jul_real":22.0,"jul_real_f":"22.00%","jul_budget_f":"4.00%","delta_txt":"+18.00 pts","esperado":20.0,"esp_txt":"20.00%","esp_periodo":"II semestre","why":"22% en el primer semestre contra una meta de 4%: más de cinco veces el objetivo del período.","trend":"Se espera 20% en el segundo semestre, manteniendo el ritmo de incorporación de clientes nuevos.","fmt_kind":"pct100","fmt_dec":2,"fmt_suf":"%","pref":"","correctiva":false,"pattern":[true,null],"runs":[],"run_max":0},{"key":"rotacion","sec":"T","n":7,"name":"Tasa de Rotación del Personal","unit":"%","meta":"≤ 23% de rotación del personal","meta_v":23.0,"dir":"le","status":"ok","suspendido":false,"racha":null,"meets_annual":false,"frecuencia":"semestral","cortes":[{"label":"I semestre","real":19.64,"meta":23.0,"real_f":"19.64%","ok":true,"vigente":true},{"label":"II semestre","real":null,"meta":23.0,"real_f":"—","ok":null,"vigente":true}],"periodo":"I semestre","jul_real":19.64,"jul_real_f":"19.64%","jul_budget_f":"23.00%","delta_txt":"-3.36 pts","esperado":21.0,"esp_txt":"21.00%","esp_periodo":"II semestre","why":"19.64% en el primer semestre contra un techo de 23%. Menor es mejor: la rotación se mantuvo 3.36 puntos por debajo del límite.","trend":"Gerencia fijó 21% como cifra esperada para el segundo semestre.","fmt_kind":"pct100","fmt_dec":2,"fmt_suf":"%","pref":"","correctiva":false,"pattern":[true,null],"runs":[],"run_max":0},{"key":"mant_it","sec":"T","n":8,"name":"Mantenimiento Preventivo de Equipos Informáticos","unit":"%","meta":"≥ 90% del mantenimiento preventivo ejecutado","meta_v":90.0,"dir":"ge","status":"ok","suspendido":false,"racha":null,"meets_annual":false,"frecuencia":"trimestral","cortes":[{"label":"T1","real":100.0,"meta":90.0,"real_f":"100.00%","ok":true,"vigente":true},{"label":"T2","real":100.0,"meta":90.0,"real_f":"100.00%","ok":true,"vigente":true},{"label":"T3","real":100.0,"meta":90.0,"real_f":"100.00%","ok":true,"vigente":true},{"label":"T4","real":null,"meta":90.0,"real_f":"—","ok":null,"vigente":false}],"periodo":"T3","jul_real":100.0,"jul_real_f":"100.00%","jul_budget_f":"90.00%","delta_txt":"+10.00 pts","esperado":100.0,"esp_txt":"100.00%","esp_periodo":"T4","why":"Los tres cortes trimestrales realizados en el año cierran en 100% contra una meta de 90%. Julio es el corte del tercer trimestre, y es el único indicador de corte largo que se actualizó este mes.","trend":"Se espera mantener el 100% en el corte de octubre.","fmt_kind":"pct100","fmt_dec":2,"fmt_suf":"%","pref":"","correctiva":false,"pattern":[true,true,true,null],"runs":[],"run_max":0},{"key":"auditorias","sec":"T","n":9,"name":"Cobertura de Auditorías","unit":"%","meta":"≥ 88% del programa de auditorías cubierto","meta_v":88.0,"dir":"ge","status":"ok","suspendido":false,"racha":null,"meets_annual":false,"frecuencia":"trimestral","cortes":[{"label":"T1","real":96.3,"meta":88.0,"real_f":"96.30%","ok":true,"vigente":true},{"label":"T2","real":96.66,"meta":88.0,"real_f":"96.66%","ok":true,"vigente":true},{"label":"T3","real":null,"meta":88.0,"real_f":"—","ok":null,"vigente":true},{"label":"T4","real":null,"meta":88.0,"real_f":"—","ok":null,"vigente":false}],"periodo":"T2","jul_real":96.66,"jul_real_f":"96.66%","jul_budget_f":"88.00%","delta_txt":"+8.66 pts","esperado":100.0,"esp_txt":"100.00%","esp_periodo":"T3","why":"96.30% en el primer trimestre y 96.66% en el segundo, ambos por encima de la meta de 88%. El corte del tercer trimestre aún no se carga en el libro maestro.","trend":"Se espera 100% de cobertura en el próximo corte trimestral.","fmt_kind":"pct100","fmt_dec":2,"fmt_suf":"%","pref":"","correctiva":false,"pattern":[true,true,null,null],"runs":[],"run_max":0}],"summary":{"e_ok":22,"e_ev":30,"e_tot":30,"d_ok":11,"d_ev":15,"d_tot":16,"g_ok":33,"g_ev":45,"g_tot":46,"e_pct":73,"d_pct":73,"g_pct":73,"t_ok":7,"t_ev":9,"t_tot":9},"correctivas":["cce","residual","costo_fruta_pct","productividad","tea","composicion","if","estructura","costo_prod_cpo","accidentes","clima","retencion"]}</script>
+<script>
+(function(){
+"use strict";
+
+var D = JSON.parse(document.getElementById('data').textContent);
+var ROWS = D.E.concat(D.D).concat(D.T);
+var MO = ['Ene','Feb','Mar','Abr','May','Jun','Jul','Ago'];
+
+/* ---------------------------------------------------------- tema */
+var root = document.documentElement, btn = document.getElementById('theme');
+var ico  = document.getElementById('theme-ico'), txt = document.getElementById('theme-txt');
+var MODES = ['auto','light','dark'];
+var PATHS = {
+  auto:'<circle cx="12" cy="12" r="8"/><path d="M12 4a8 8 0 0 0 0 16z" fill="currentColor" stroke="none"/>',
+  light:'<circle cx="12" cy="12" r="4.2"/><path d="M12 2.6v2.2M12 19.2v2.2M4.2 12H2M22 12h-2.2M6.5 6.5 5 5M19 19l-1.5-1.5M17.5 6.5 19 5M5 19l1.5-1.5"/>',
+  dark:'<path d="M20 14.5A8.4 8.4 0 0 1 9.5 4 8.5 8.5 0 1 0 20 14.5z"/>'
+};
+var LABEL = {auto:'Sistema', light:'Claro', dark:'Oscuro'};
+/* si el lector ya eligió tema en el visor, la página abre en ese tema */
+var stamped = root.getAttribute('data-theme');
+var mode = MODES.indexOf(stamped) > -1 ? stamped : 'auto';
+try{ var s = localStorage.getItem('coinsu-jul26-theme'); if(MODES.indexOf(s) > -1) mode = s; }catch(e){}
+
+function applyTheme(){
+  if(mode === 'auto') root.removeAttribute('data-theme');
+  else root.setAttribute('data-theme', mode);
+  ico.innerHTML = PATHS[mode];
+  txt.textContent = LABEL[mode];
+  btn.setAttribute('title', 'Tema: ' + LABEL[mode] + '. Toque para cambiar.');
+  btn.setAttribute('aria-label', 'Tema: ' + LABEL[mode] + '. Toque para cambiar.');
+}
+btn.addEventListener('click', function(){
+  mode = MODES[(MODES.indexOf(mode) + 1) % MODES.length];
+  try{ localStorage.setItem('coinsu-jul26-theme', mode); }catch(e){}
+  applyTheme();
+});
+applyTheme();
+
+/* ------------------------------------------------------ utilidades */
+function esc(s){
+  return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+/* el criterio lo calcula el generador de datos: dos meses consecutivos fuera de
+   presupuesto, o un corte trimestral/semestral que no alcanzó su meta */
+function isCorr(r){ return !!r.correctiva; }
+
+var PERIODO = {
+  'T1':'T1 · enero a marzo', 'T2':'T2 · abril a junio',
+  'T3':'T3 · julio a septiembre', 'T4':'T4 · octubre a diciembre',
+  'I semestre':'I semestre · enero a junio', 'II semestre':'II semestre · julio a diciembre'
+};
+var CORTO = {'I semestre':'I sem', 'II semestre':'II sem'};
+/* buscar sin tildes: en el telefono casi nadie las escribe */
+function fold(s){
+  s = String(s).toLowerCase();
+  return s.normalize ? s.normalize('NFD').replace(/[\u0300-\u036f]/g, '') : s;
+}
+
+/* ---------------------------------------------------------- gráfico */
+var W = 560, H = 208, PL = 50, PR = 20, PT = 24, PB = 32;
+var AXIS = H - PB;                       // línea del eje de meses
+
+/* En pantalla angosta el SVG se dibuja más pequeño, así que el texto de dentro
+   crece para seguir leyéndose. El cuerpo se decide aquí —no en la hoja de
+   estilos— porque la placa de fondo y el reparto de las etiquetas dependen de él. */
+var NARROW = window.matchMedia('(max-width:640px)');
+var SZ_VL = 10.5, SZ_VP = 10;
+function setSizes(){ SZ_VL = NARROW.matches ? 14 : 10.5; SZ_VP = NARROW.matches ? 13 : 10; }
+setSizes();
+
+/* placa del color de la tarjeta detrás de una etiqueta: el halo solo no tapa
+   el vano del separador decimal y dejaba un trozo de línea dentro del número */
+function plate(txt, cx, cy, size, anchor, padL, padR){
+  var b = plateBox(txt, cx, cy, size, anchor, padL, padR);
+  return '<rect class="plate" x="' + b.x0.toFixed(1) + '" y="' + b.y0.toFixed(1) +
+         '" width="' + b.w.toFixed(1) + '" height="' + b.h.toFixed(1) + '"/>';
+}
+function plateBox(txt, cx, cy, size, anchor, padL, padR){
+  padL = padL || 0; padR = padR || 0;
+  var tw = txt.length * size * 0.6 + 4;                 // avance real de la mono: 0.6 em
+  var x0 = (anchor === 'end' ? cx + 2.5 - tw : cx - tw / 2) - padL;
+  return {w:tw + padL + padR, h:size + 2.4, x0:x0, y0:cy - size + 1.4};
+}
+/* holgura de la etiqueta de agosto: por la izquierda tapa la discontinua de
+   presupuesto, y por la derecha el trozo que reasomaba hasta el borde */
+var PAD_VP_L = 11, PAD_VP_R = 5;
+
+function svgChart(r){
+  var real = r.real.concat([r.jul_real]);                    // Ene..Jul
+  var bud  = r.budget.concat([r.budget_jul, r.budget_ago]);  // Ene..Ago
+  var susp = r.suspendido;
+  if(susp) real = r.real.slice();                            // suspendido: la serie corta en junio
+
+  var vals = real.slice();
+  for(var i = 0; i < bud.length; i++) if(bud[i] !== null && bud[i] !== undefined) vals.push(bud[i]);
+  if(!susp && r.esperado !== null && r.esperado !== undefined) vals.push(r.esperado);
+
+  var sc = niceScale(Math.min.apply(null, vals), Math.max.apply(null, vals));
+  var lo = sc.lo, hi = sc.hi;
+
+  var x = function(i){ return PL + i * (W - PL - PR) / 7; };
+  var y = function(v){ return PT + (hi - v) * (AXIS - PT) / (hi - lo); };
+
+  var o = [];
+
+  // 1 · banda de suspensión, debajo de todo para no borrar la retícula
+  if(susp){
+    o.push('<rect class="susp-band" x="' + x(5.5).toFixed(1) + '" y="' + PT + '" width="' +
+           (W - PR - x(5.5)).toFixed(1) + '" height="' + (AXIS - PT) + '"/>');
+  }
+
+  // 2 · retícula de pasos redondos y sus rótulos
+  var ticks = [], tv = lo, guard = 0;
+  while(tv <= hi + sc.step * 1e-6 && guard++ < 12){ ticks.push(tv); tv += sc.step; }
+  for(var t = 0; t < ticks.length; t++){
+    var yy = y(ticks[t]);
+    o.push('<line class="gl" x1="' + PL + '" y1="' + yy.toFixed(1) + '" x2="' + (W - PR) + '" y2="' + yy.toFixed(1) + '"/>');
+    o.push('<text x="' + (PL - 7) + '" y="' + (yy + 3.2).toFixed(1) + '" text-anchor="end">' + tickLabel(ticks[t], sc.dec) + '</text>');
+  }
+
+  // 3 · eje, antes de los datos para que no pase por encima del trazo
+  o.push('<line class="ax" x1="' + PL + '" y1="' + AXIS + '" x2="' + (W - PR) + '" y2="' + AXIS + '"/>');
+
+  if(susp){
+    o.push('<text class="susp" x="' + ((x(5.5) + (W - PR)) / 2).toFixed(1) + '" y="' + (PT + 14) + '" text-anchor="middle">SUSPENDIDO</text>');
+  }
+
+  // 4 · presupuesto
+  var bp = [];
+  for(var b = 0; b < bud.length; b++) if(bud[b] !== null && bud[b] !== undefined) bp.push(x(b).toFixed(1) + ',' + y(bud[b]).toFixed(1));
+  if(bp.length > 1) o.push('<polyline class="bud" points="' + bp.join(' ') + '"/>');
+
+  // 5 · serie real; el relleno solo cuando la escala arranca en cero
+  var rp = [];
+  for(var k = 0; k < real.length; k++) rp.push(x(k).toFixed(1) + ',' + y(real[k]).toFixed(1));
+  if(lo === 0){
+    o.push('<polygon class="area" points="' + x(0).toFixed(1) + ',' + AXIS + ' ' + rp.join(' ') + ' ' +
+           x(real.length - 1).toFixed(1) + ',' + AXIS + '"/>');
+  }
+  o.push('<polyline class="real" points="' + rp.join(' ') + '"/>');
+  for(var d = 0; d < real.length - 1; d++) o.push('<circle class="dot" cx="' + x(d).toFixed(1) + '" cy="' + y(real[d]).toFixed(1) + '" r="2.4"/>');
+
+  var li = real.length - 1, lx = x(li), ly = y(real[li]);
+  var stColor = r.status === 'no' ? 'var(--no)' : (r.status === 'sp' ? 'var(--susp)' : 'var(--ok)');
+
+  // 6 · proyección de agosto
+  var above = true, ptxt = null, pxx = 0, pyy = 0, pyy0 = 0, panchor = 'end', ppadR = PAD_VP_R;
+  if(!susp && r.esperado !== null && r.esperado !== undefined){
+    var px = x(7), py = y(r.esperado);
+    above = py >= ly;
+    o.push('<polyline class="projline" points="' + (lx + 6).toFixed(1) + ',' + ly.toFixed(1) + ' ' + px.toFixed(1) + ',' + py.toFixed(1) + '"/>');
+    o.push('<rect class="proj" x="' + (px - 4).toFixed(1) + '" y="' + (py - 4).toFixed(1) + '" width="8" height="8" transform="rotate(45 ' + px.toFixed(1) + ' ' + py.toFixed(1) + ')"/>');
+
+    var pdy = (py < ly) ? -11 : 16, flipped = false;
+    if(py + pdy > AXIS - 7){ pdy = -11; flipped = true; }   // no invadir la banda de meses
+    if(py + pdy < PT + 8) pdy = 16;
+    // si el volteo la deja sobre su propia punteada, se aparta a la izquierda del rombo
+    pxx = flipped ? px - 11 : px - 6;
+    ppadR = PAD_VP_R + (flipped ? 5 : 0);   // al voltear, la placa debe seguir llegando al borde
+    pyy = py + pdy;
+    pyy0 = py;
+    ptxt = shortNum(r.esperado, r);
+  }
+
+  // 7 · punto del mes, encima de la punteada
+  o.push('<circle class="now" cx="' + lx.toFixed(1) + '" cy="' + ly.toFixed(1) + '" r="4.6" fill="' + stColor + '"/>');
+
+  // 8 · etiquetas de valor, cada una sobre su placa
+  var stepX = (W - PL - PR) / 7;
+  function ocupada(cy){                       // ¿alguna línea cruza la caja de la etiqueta?
+    var top = cy - SZ_VL, bot = cy + 4;
+    if(li > 0){                               // tramo que entra desde junio
+      var yin = ly + (y(real[li - 1]) - ly) * (20 / stepX);
+      if(yin > top && yin < bot) return true;
+    }
+    if(ptxt !== null && pxx > lx + 6){        // tramo que sale hacia agosto
+      var yout = ly + (pyy0 - ly) * (14 / (x(7) - lx - 6));
+      if(yout > top && yout < bot) return true;
+    }
+    return false;
+  }
+  var jdy = above ? -11 : 16;
+  if(ocupada(ly + jdy) && !ocupada(ly - jdy)) jdy = -jdy;
+  if(ly + jdy > AXIS - 7) jdy = -11;
+  if(ly + jdy < PT + 8) jdy = 16;
+  var jtxt = shortNum(real[li], r), jx = lx, janchor = 'middle';
+
+  // si las dos etiquetas caen a la misma altura y sus cajas se cruzan,
+  // la de julio se aparta a la izquierda de su punto en vez de encimarse
+  if(ptxt !== null){
+    var jb = plateBox(jtxt, jx, ly + jdy, SZ_VL, janchor);
+    var pb = plateBox(ptxt, pxx, pyy, SZ_VP, panchor, PAD_VP_L, ppadR);
+    if(jb.x0 + jb.w > pb.x0 && pb.x0 + pb.w > jb.x0 &&
+       Math.abs((ly + jdy) - pyy) < Math.max(SZ_VL, SZ_VP) + 2){
+      jx = lx - 7; janchor = 'end';
+    }
+  }
+
+  o.push(plate(jtxt, jx, ly + jdy, SZ_VL, janchor));
+  o.push('<text class="vl" x="' + jx.toFixed(1) + '" y="' + (ly + jdy).toFixed(1) + '" text-anchor="' + janchor + '" style="font-size:' + SZ_VL + 'px;color:' + stColor + '">' + esc(jtxt) + '</text>');
+  if(ptxt !== null){
+    o.push(plate(ptxt, pxx, pyy, SZ_VP, panchor, PAD_VP_L, ppadR));
+    o.push('<text class="vp" x="' + pxx.toFixed(1) + '" y="' + pyy.toFixed(1) + '" text-anchor="' + panchor + '" style="font-size:' + SZ_VP + 'px">' + esc(ptxt) + '</text>');
+  }
+
+  // 9 · nombres de mes
+  for(var m = 0; m < 8; m++){
+    var cls = 'mo m' + m + ((m === 6 && !susp) ? ' hi' : '');
+    o.push('<text class="' + cls + '" x="' + x(m).toFixed(1) + '" y="' + (AXIS + 17) + '" text-anchor="middle">' + MO[m] + '</text>');
+  }
+
+  return '<svg viewBox="0 0 ' + W + ' ' + H + '" role="img" aria-label="Serie de enero a julio de ' + esc(r.name) + '">' + o.join('') + '</svg>';
+}
+
+/* escala con pasos redondos: entre 3 y 5 líneas de retícula */
+function niceScale(dLo, dHi){
+  if(dHi === dLo){
+    var d = Math.abs(dLo) || 1;
+    dLo -= d * .5; dHi += d * .5;
+  }
+  var pad = (dHi - dLo) * .14;
+  var lo = dLo - pad, hi = dHi + pad;
+  if(dLo >= 0 && lo < 0) lo = 0;
+
+  var raw = (hi - lo) / 3;
+  var mag = Math.pow(10, Math.floor(Math.log(raw) / Math.LN10));
+  var norm = raw / mag;
+  var mult = norm <= 1 ? 1 : norm <= 2 ? 2 : norm <= 5 ? 5 : 10;   /* sin 2.5: rotulaba «3» una línea de 2.5 */
+  var step = mult * mag;
+
+  var nlo = Math.floor(lo / step) * step;
+  var nhi = Math.ceil(hi / step) * step;
+  if(dLo >= 0 && nlo < 0) nlo = 0;
+  if(nhi === nlo) nhi = nlo + step;
+
+  var dec = step >= 1 ? 0 : (step >= .1 ? 1 : (step >= .01 ? 2 : 3));
+  return {lo:nlo, hi:nhi, step:step, dec:dec};
+}
+/* Las barras siempre arrancan en cero, así que la escala solo necesita un techo
+   ajustado: el menor valor redondo que deje entre tres y cinco líneas de retícula. */
+function scaleBarras(mx, meta){
+  var objetivo = mx * 1.08;
+  if(meta !== null && meta !== undefined) objetivo = Math.max(objetivo, meta * 1.16);
+  var mag = Math.pow(10, Math.floor(Math.log(objetivo) / Math.LN10));
+  var pasos = [1, 1.5, 2, 2.5, 3, 5, 10, 15, 20, 25];
+  for(var i = 0; i < pasos.length; i++){
+    var st = pasos[i] * mag / 10;
+    var top = Math.ceil(objetivo / st) * st;
+    if(top / st <= 6) return {lo:0, hi:top, step:st, dec: st >= 1 ? 0 : (st >= .1 ? 1 : 2)};
+  }
+  return niceScale(0, mx);
+}
+
+function tickLabel(v, dec){
+  if(Math.abs(v) < Math.pow(10, -(dec + 3))) v = 0;
+  return v.toLocaleString('es-HN', {minimumFractionDigits:dec, maximumFractionDigits:dec});
+}
+
+/* Los cortes largos traen dos o cuatro datos: una línea no dice nada, así que van
+   en barras, con la meta como discontinua y el corte pendiente en terracota. */
+function cortesChart(r){
+  var cs = r.cortes, k = cs.length, vals = [];
+  for(var i = 0; i < k; i++){
+    if(cs[i].real !== null && cs[i].real !== undefined) vals.push(cs[i].real);
+    if(cs[i].meta !== null && cs[i].meta !== undefined) vals.push(cs[i].meta);
+  }
+  if(r.esperado !== null && r.esperado !== undefined) vals.push(r.esperado);
+
+  var sc = scaleBarras(Math.max.apply(null, vals), r.meta_v);
+  var lo = 0, hi = sc.hi;
+  var y = function(v){ return PT + (hi - v) * (AXIS - PT) / (hi - lo); };
+  var slot = (W - PL - PR) / k;
+  var cx = function(i){ return PL + slot * (i + 0.5); };
+  var bw = Math.min(100, slot * 0.5);
+
+  var o = [];
+  var ticks = [], tv = lo, guard = 0;
+  while(tv <= hi + sc.step * 1e-6 && guard++ < 12){ ticks.push(tv); tv += sc.step; }
+  for(var t = 0; t < ticks.length; t++){
+    var yy = y(ticks[t]);
+    o.push('<line class="gl" x1="' + PL + '" y1="' + yy.toFixed(1) + '" x2="' + (W - PR) + '" y2="' + yy.toFixed(1) + '"/>');
+    o.push('<text x="' + (PL - 7) + '" y="' + (yy + 3.2).toFixed(1) + '" text-anchor="end">' + tickLabel(ticks[t], sc.dec) + '</text>');
+  }
+  o.push('<line class="ax" x1="' + PL + '" y1="' + AXIS + '" x2="' + (W - PR) + '" y2="' + AXIS + '"/>');
+
+  var ym = (r.meta_v === null || r.meta_v === undefined) ? null : y(r.meta_v);
+  function apartarDeMeta(ly, size){
+    if(ym !== null && ly - size - 2 < ym && ym < ly + 4) ly = ym - size - 3;
+    return ly < PT + 9 ? PT + 9 : ly;
+  }
+
+  var primerPendiente = true;
+  for(var i = 0; i < k; i++){
+    var c = cs[i], x0 = cx(i) - bw / 2;
+    if(c.real !== null && c.real !== undefined){
+      var yb = y(c.real);
+      o.push('<rect class="cbar ' + (c.ok ? 'ok' : 'no') + '" x="' + x0.toFixed(1) + '" y="' + yb.toFixed(1) +
+             '" width="' + bw.toFixed(1) + '" height="' + Math.max(1, AXIS - yb).toFixed(1) + '"/>');
+      var lab = shortNum(c.real, r), ly = apartarDeMeta(yb - 6, SZ_VL);
+      o.push(plate(lab, cx(i), ly, SZ_VL, 'middle'));
+      o.push('<text class="vl" x="' + cx(i).toFixed(1) + '" y="' + ly.toFixed(1) + '" text-anchor="middle" style="font-size:' + SZ_VL + 'px;color:' + (c.ok ? 'var(--ok)' : 'var(--no)') + '">' + esc(lab) + '</text>');
+    }else if(primerPendiente && r.esperado !== null && r.esperado !== undefined){
+      primerPendiente = false;
+      var ye = y(r.esperado);
+      o.push('<rect class="cbar-p" x="' + x0.toFixed(1) + '" y="' + ye.toFixed(1) +
+             '" width="' + bw.toFixed(1) + '" height="' + Math.max(1, AXIS - ye).toFixed(1) + '"/>');
+      var le = shortNum(r.esperado, r), lye = apartarDeMeta(ye - 6, SZ_VP);
+      o.push(plate(le, cx(i), lye, SZ_VP, 'middle'));
+      o.push('<text class="vp" x="' + cx(i).toFixed(1) + '" y="' + lye.toFixed(1) + '" text-anchor="middle" style="font-size:' + SZ_VP + 'px">' + esc(le) + '</text>');
+    }else{
+      o.push('<text class="pend" x="' + cx(i).toFixed(1) + '" y="' + (AXIS - 8) + '" text-anchor="middle">pendiente</text>');
+    }
+    var etq = CORTO[c.label] || c.label;
+    var ultimo = c.label === r.periodo;
+    o.push('<text class="mo' + (ultimo ? ' hi' : '') + '" x="' + cx(i).toFixed(1) + '" y="' + (AXIS + 17) + '" text-anchor="middle">' + etq + '</text>');
+  }
+
+  if(ym !== null){
+    var pts = PL + ',' + ym.toFixed(1) + ' ' + (W - PR) + ',' + ym.toFixed(1);
+    o.push('<polyline class="bud-halo" points="' + pts + '"/>');
+    o.push('<polyline class="bud" points="' + pts + '"/>');
+  }
+  return '<svg viewBox="0 0 ' + W + ' ' + H + '" role="img" aria-label="Cortes de ' + esc(r.name) + '">' + o.join('') + '</svg>';
+}
+
+function shortNum(v, r){
+  if(v === null || v === undefined) return '';
+  var dec = Math.min(r.fmt_dec, 3);   /* los mismos decimales que la cifra grande */
+  return v.toLocaleString('es-HN', {minimumFractionDigits:dec, maximumFractionDigits:dec});
+}
+
+function strip(r){
+  var vals = r.real.concat([r.jul_real]);
+  var buds = r.budget.concat([r.budget_jul]);
+  var h = '';
+  for(var i = 0; i < 7; i++){
+    var b = buds[i], ok = (b === null || b === undefined)
+          || (r.dir === 'le' ? vals[i] <= b + 1e-9 : vals[i] >= b - 1e-9);
+    var cls = (ok ? '' : 'cell-no') + (i === 6 ? ' cell-now' : '');
+    h += '<div' + (cls.trim() ? ' class="' + cls.trim() + '"' : '') + '><span class="m">' + MO[i] + '</span><span class="v">' + esc(shortNum(vals[i], r)) + '</span></div>';
+  }
+  h += '<div class="cell-proj"><span class="m">Ago</span><span class="v">' + esc(shortNum(r.esperado, r)) + '</span></div>';
+  return '<div class="strip" role="img" aria-label="Serie constante de enero a julio con proyección de agosto">' + h + '</div>';
+}
+
+function isConst(r){
+  var v = r.real.concat([r.jul_real]);
+  for(var i = 1; i < v.length; i++) if(v[i] !== v[0]) return false;
+  return true;
+}
+
+/* ---------------------------------------------------------- tarjetas */
+var CARET = '<svg class="caret" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 2 5 4-5 4"/></svg>';
+
+function chipTxt(r){
+  return r.status === 'ok' ? 'Cumple' : (r.status === 'no' ? 'No cumple' : 'Suspendido');
+}
+
+function card(r){
+  var h = '<article class="ind" id="i-' + r.sec + r.n + '" data-st="' + r.status + '" data-sec="' + r.sec + '" data-corr="' + (isCorr(r) ? '1' : '0') + '" data-key="' + esc(r.key) + '" data-q="' + esc(fold(r.name)) + '">';
+
+  h += '<div class="ind-top"><span class="ind-num">' + r.sec + String(r.n).padStart(2, '0') + '</span>'
+     + '<h3 class="ind-name">' + esc(r.name) + '</h3>'
+     + '<span class="chip">' + chipTxt(r) + '</span></div>';
+
+  var pref = r.pref || '';   // «L. » o «$»: sin el símbolo, 1,020.76 se lee en lempiras
+  h += '<div class="ind-fig"><span class="ind-val">' + (r.suspendido ? '&mdash;' : esc(pref + r.jul_real_f)) + '</span>';
+  if(!r.suspendido) h += '<span class="ind-delta">' + esc(r.delta_txt) + (r.sec === 'T' ? ' vs. meta' : ' vs. presupuesto') + '</span>';
+  h += '</div><dl class="ind-meta">';
+  if(r.suspendido){
+    h += '<dt class="lbl">Estado</dt><dd>' + esc(r.meta) + '</dd>';
+  }else if(r.sec === 'T'){
+    h += '<dt class="lbl">Último corte</dt><dd class="bud">' + esc(PERIODO[r.periodo] || r.periodo) + '</dd>'
+       + '<dt class="lbl">Meta</dt><dd>' + esc(r.meta) + '</dd>';
+  }else{
+    h += '<dt class="lbl">Presup. jul</dt><dd class="bud">' + esc(pref + r.jul_budget_f) + '</dd>'
+       + '<dt class="lbl">Meta</dt><dd>' + esc(r.meta) + '</dd>';
+  }
+  h += '</dl>';
+
+  if(r.racha){
+    var mild = !isCorr(r);
+    h += '<p class="racha' + (mild ? ' mild' : '') + '"><span class="lbl">' + (mild ? 'Nota' : 'Racha') + '</span><span>' + esc(r.racha) + '</span></p>';
+  }
+  if(r.meets_annual && !(r.racha && r.racha.indexOf('meta anual') > -1)){
+    h += '<p class="racha mild"><span class="lbl">Anual</span><span>El resultado del mes sigue dentro de la meta anual.</span></p>';
+  }
+
+  h += '<div class="chart">' + (r.sec === 'T' ? cortesChart(r) : (isConst(r) ? strip(r) : svgChart(r))) + '</div>';
+
+  var titulo2 = r.suspendido ? 'Qué sigue'
+              : (r.sec === 'T' ? 'Qué se espera · ' + esc(r.esp_txt) + ' (' + esc(r.esp_periodo) + ')'
+                               : 'Qué se espera en agosto · ' + esc(r.esp_txt));
+  h += '<div class="reads">'
+     + '<details><summary>' + CARET + (r.sec === 'T' ? 'Lectura del corte' : 'Lectura del mes') + '</summary><div class="body">' + esc(r.why) + '</div></details>'
+     + '<details><summary>' + CARET + titulo2 + '</summary><div class="body">' + esc(r.trend) + '</div></details>'
+     + '</div>';
+
+  return h + '</article>';
+}
+
+document.getElementById('grid-E').innerHTML = D.E.map(card).join('');
+document.getElementById('grid-D').innerHTML = D.D.map(card).join('');
+document.getElementById('grid-T').innerHTML = D.T.map(card).join('');
+
+/* al cruzar el ancho de teléfono cambia el cuerpo del texto de los gráficos,
+   y con él la geometría de las placas: hay que redibujarlos */
+var BY_KEY = {};
+ROWS.forEach(function(r){ BY_KEY[r.key] = r; });
+function redraw(){
+  setSizes();
+  Array.prototype.forEach.call(document.querySelectorAll('.ind'), function(c){
+    var r = BY_KEY[c.getAttribute('data-key')], box = c.querySelector('.chart');
+    if(r && box) box.innerHTML = r.sec === 'T' ? cortesChart(r) : (isConst(r) ? strip(r) : svgChart(r));
+  });
+}
+if(NARROW.addEventListener) NARROW.addEventListener('change', redraw);
+else if(NARROW.addListener) NARROW.addListener(redraw);
+
+/* --------------------------------------------------- lo que atender */
+var order = {'Cuarto':0, 'Tercer':1, 'Segundo':2, 'Primer':3};
+// solo los mensuales: la lista habla del presupuesto de julio, y los cortes
+// trimestrales y semestrales no tienen uno
+var att = D.E.concat(D.D).filter(function(r){ return r.status === 'no'; }).sort(function(a, b){
+  var ka = a.racha ? (order[a.racha.split(' ')[0]] !== undefined ? order[a.racha.split(' ')[0]] : 4) : 9;
+  var kb = b.racha ? (order[b.racha.split(' ')[0]] !== undefined ? order[b.racha.split(' ')[0]] : 4) : 9;
+  return ka - kb;
+});
+document.getElementById('att').innerHTML = att.map(function(r, i){
+  var tag = isCorr(r) ? '<span class="tag corr">Acción correctiva</span>'
+          : (r.meets_annual ? '<span class="tag anual">Dentro de meta anual</span>'
+          : '<span class="tag first">Fuera de presupuesto</span>');
+  return '<button class="att-row" type="button" data-go="i-' + r.sec + r.n + '">'
+       + '<span class="idx">' + String(i + 1).padStart(2, '0') + '</span>'
+       + '<span class="nm">' + esc(r.name) + '</span>'
+       + '<span class="vl">' + esc((r.pref || '') + r.jul_real_f) + '</span>'
+       + '<span class="tg">' + tag + '</span>'
+       + '<span class="mt">Presupuesto de julio ' + esc((r.pref || '') + r.jul_budget_f) + ' · meta ' + esc(r.meta) + '</span>'
+       + '</button>';
+}).join('');
+
+/* ------------------------------------------- acciones correctivas */
+var MESES_C = ['Ene','Feb','Mar','Abr','May','Jun','Jul'];
+
+/* Cortar por «. » partiría «L. 1.5 millones»: la frase solo termina si después
+   del punto viene un espacio y una mayúscula. */
+function primeraFrase(t){
+  var m = /^([\s\S]+?[.!?])\s+[A-ZÁÉÍÓÚÑ¡¿]/.exec(t);
+  var f = m ? m[1] : t;
+  return f.length > 240 ? f.slice(0, 237).replace(/\s+\S*$/, '') + '…' : f;
+}
+
+function tramos(r){
+  if(r.sec === 'T'){
+    var fuera = r.cortes.filter(function(c){ return c.ok === false; }).map(function(c){ return CORTO[c.label] || c.label; });
+    return [fuera.join(' y ') + ' fuera de meta'];
+  }
+  return r.runs.map(function(t){
+    return MESES_C[t[0]] + '–' + MESES_C[t[1]] + ' · ' + (t[1] - t[0] + 1) + ' meses';
+  });
+}
+
+function patStrip(r){
+  var h = '', enRacha = {};
+  (r.runs || []).forEach(function(t){ for(var i = t[0]; i <= t[1]; i++) enRacha[i] = 1; });
+  if(r.sec === 'T'){
+    r.cortes.forEach(function(c){
+      var cls = c.ok === true ? 'si' : (c.ok === false ? 'no tramo' : '');
+      h += '<span class="' + cls + '">' + esc(CORTO[c.label] || c.label) + '</span>';
+    });
+  }else{
+    for(var i = 0; i < 7; i++){
+      var ok = r.pattern[i];
+      var cls = ok === true ? 'si' : (ok === false ? ('no' + (enRacha[i] ? ' tramo' : '')) : '');
+      h += '<span class="' + cls + '">' + MESES_C[i] + '</span>';
+    }
+  }
+  return '<span class="pat">' + h + '</span>';
+}
+
+var BYK = {};
+ROWS.forEach(function(r){ BYK[r.key] = r; });
+document.getElementById('corr').innerHTML = D.correctivas.map(function(k, i){
+  var r = BYK[k];
+  return '<button class="corr-row" type="button" data-go="i-' + r.sec + r.n + '">'
+       + '<span class="idx">' + String(i + 1).padStart(2, '0') + '</span>'
+       + '<span class="nm">' + esc(r.name) + '</span>'
+       + '<span class="run">' + tramos(r).map(function(t){ return '<span>' + esc(t) + '</span>'; }).join('') + '</span>'
+       + '<span class="vl ' + (r.status === 'ok' ? 'si' : 'no') + '">' + esc((r.pref || '') + r.jul_real_f) + '</span>'
+       + patStrip(r)
+       + '<span class="txt">' + esc(primeraFrase(r.why)) + '</span>'
+       + '</button>';
+}).join('');
+
+document.getElementById('corr').addEventListener('click', function(e){
+  var b = e.target.closest('[data-go]');
+  if(b) irA(b.getAttribute('data-go'));
+});
+
+document.getElementById('att').addEventListener('click', function(e){
+  var b = e.target.closest('[data-go]');
+  if(b) irA(b.getAttribute('data-go'));
+});
+var mq = window.matchMedia('(prefers-reduced-motion: reduce)');
+function irA(id){
+  var el = document.getElementById(id);
+  if(!el) return;
+  reset();
+  el.scrollIntoView({behavior: mq.matches ? 'auto' : 'smooth', block: 'center'});
+  el.classList.remove('flash');
+  void el.offsetWidth;
+  el.classList.add('flash');
+}
+
+/* ---------------------------------------------------------- filtros */
+var fSec = 'all', fSt = 'all', fQ = '';
+var cards = Array.prototype.slice.call(document.querySelectorAll('.ind'));
+var countEl = document.getElementById('count');
+var emptyEl = document.getElementById('empty');
+
+function apply(){
+  var n = 0;
+  cards.forEach(function(c){
+    var ok = (fSec === 'all' || c.dataset.sec === fSec)
+          && (fSt === 'all'
+              || (fSt === 'corr' ? c.dataset.corr === '1' : c.dataset.st === fSt))
+          && (fQ === '' || c.dataset.q.indexOf(fQ) > -1);
+    c.hidden = !ok;
+    if(ok) n++;
+  });
+  ['E','D','T'].forEach(function(s){
+    var vis = cards.some(function(c){ return c.dataset.sec === s && !c.hidden; });
+    document.getElementById('sec-' + s).hidden = !vis;
+  });
+  countEl.textContent = n + (n === 1 ? ' indicador' : ' indicadores');
+  emptyEl.hidden = n > 0;
+}
+function reset(){
+  fSec = 'all'; fSt = 'all'; fQ = '';
+  document.getElementById('q').value = '';
+  document.querySelectorAll('.seg button').forEach(function(b){
+    b.setAttribute('aria-pressed', String(b.dataset.sec === 'all' || b.dataset.st === 'all'));
+  });
+  apply();
+}
+document.querySelectorAll('.seg button').forEach(function(b){
+  b.addEventListener('click', function(){
+    var grp = b.parentElement;
+    grp.querySelectorAll('button').forEach(function(x){ x.setAttribute('aria-pressed','false'); });
+    b.setAttribute('aria-pressed','true');
+    if(b.dataset.sec !== undefined) fSec = b.dataset.sec; else fSt = b.dataset.st;
+    apply();
+  });
+});
+document.getElementById('q').addEventListener('input', function(e){
+  fQ = fold(e.target.value.trim());
+  apply();
+});
+apply();
+})();
+</script>
+
+</body>
+</html>
